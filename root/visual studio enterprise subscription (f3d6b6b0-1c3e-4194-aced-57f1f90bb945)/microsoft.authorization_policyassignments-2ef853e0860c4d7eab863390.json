@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "2ef853e0860c4d7eab863390",
+      "kind": "policyassignments",
+      "apiVersion": "2025-03-01",
+      "location": "global",
+      "properties": {
+        "definitionVersion": "1.0.*",
+        "displayName": "Key Vault keys should have an expiration date",
+        "enforcementMode": "Default",
+        "instanceId": "916a751f-1441-4ec0-b3c6-44195f2ac2b6",
+        "metadata": {},
+        "nonComplianceMessages": [],
+        "notScopes": [],
+        "overrides": [],
+        "parameters": {
+          "effect": {
+            "value": "Deny"
+          }
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/152b15f7-8e1f-4c1f-ab71-8c010ba5dbc0",
+        "resourceSelectors": [],
+        "scope": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945"
+      }
+    }
+  ],
+  "outputs": {}
+}
