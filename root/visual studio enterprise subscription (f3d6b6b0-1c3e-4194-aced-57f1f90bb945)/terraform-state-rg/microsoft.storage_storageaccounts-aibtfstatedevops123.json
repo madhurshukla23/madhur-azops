@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "name": "aibtfstatedevops123",
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "kind": "StorageV2",
+      "apiVersion": "2025-01-01",
+      "location": "eastus",
+      "tags": {},
+      "properties": {
+        "accessTier": "Hot",
+        "allowBlobPublicAccess": false,
+        "allowCrossTenantReplication": false,
+        "encryption": {
+          "keySource": "Microsoft.Storage",
+          "services": {
+            "blob": {
+              "enabled": true,
+              "keyType": "Account"
+            },
+            "file": {
+              "enabled": true,
+              "keyType": "Account"
+            }
+          }
+        },
+        "keyCreationTime": {},
+        "minimumTlsVersion": "TLS1_0",
+        "networkAcls": {
+          "bypass": "AzureServices",
+          "defaultAction": "Allow",
+          "ipRules": [],
+          "ipv6Rules": [],
+          "virtualNetworkRules": []
+        },
+        "primaryEndpoints": {
+          "blob": "https://aibtfstatedevops123.blob.core.windows.net/",
+          "dfs": "https://aibtfstatedevops123.dfs.core.windows.net/",
+          "file": "https://aibtfstatedevops123.file.core.windows.net/",
+          "queue": "https://aibtfstatedevops123.queue.core.windows.net/",
+          "table": "https://aibtfstatedevops123.table.core.windows.net/",
+          "web": "https://aibtfstatedevops123.z13.web.core.windows.net/"
+        },
+        "primaryLocation": "eastus",
+        "privateEndpointConnections": [],
+        "statusOfPrimary": "available",
+        "supportsHttpsTrafficOnly": true
+      }
+    }
+  ],
+  "outputs": {}
+}

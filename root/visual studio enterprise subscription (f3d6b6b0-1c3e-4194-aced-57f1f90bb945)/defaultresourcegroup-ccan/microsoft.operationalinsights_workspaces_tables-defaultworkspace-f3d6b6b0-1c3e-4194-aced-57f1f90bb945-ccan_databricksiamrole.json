@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-02-01",
+      "name": "DefaultWorkspace-f3d6b6b0-1c3e-4194-aced-57f1f90bb945-CCAN/DatabricksIAMRole",
+      "properties": {
+        "plan": "Analytics",
+        "retentionInDays": 30,
+        "schema": {
+          "displayName": "DatabricksIAMRole",
+          "name": "DatabricksIAMRole"
+        },
+        "totalRetentionInDays": 30
+      },
+      "type": "Microsoft.OperationalInsights/workspaces/tables"
+    }
+  ],
+  "outputs": {}
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.insights/components",
+      "name": "snowlogic",
+      "kind": "web",
+      "apiVersion": "2020-02-02",
+      "location": "canadacentral",
+      "tags": {},
+      "properties": {
+        "AppId": "1ed41b2f-7cab-4728-aa56-66ded4d1c9d0",
+        "ApplicationId": "snowlogic",
+        "Application_Type": "web",
+        "ConnectionString": "InstrumentationKey=99d6b5ca-6597-46ba-afb1-cb8ca516a812;IngestionEndpoint=https://canadacentral-1.in.applicationinsights.azure.com/;LiveEndpoint=https://canadacentral.livediagnostics.monitor.azure.com/;ApplicationId=1ed41b2f-7cab-4728-aa56-66ded4d1c9d0",
+        "DisableLocalAuth": false,
+        "Flow_Type": "Redfield",
+        "IngestionMode": "LogAnalytics",
+        "InstrumentationKey": "99d6b5ca-6597-46ba-afb1-cb8ca516a812",
+        "Name": "snowlogic",
+        "Request_Source": "IbizaWebAppExtensionCreate",
+        "RetentionInDays": 90,
+        "TenantId": "f3d6b6b0-1c3e-4194-aced-57f1f90bb945",
+        "Ver": "v2",
+        "WorkspaceResourceId": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/DefaultResourceGroup-CCAN/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-f3d6b6b0-1c3e-4194-aced-57f1f90bb945-CCAN",
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled"
+      }
+    }
+  ],
+  "outputs": {}
+}
