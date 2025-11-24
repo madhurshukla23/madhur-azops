@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Network/networkWatchers",
+      "name": "NetworkWatcher_westus2",
+      "apiVersion": "2024-07-01",
+      "location": "westus2",
+      "properties": {
+        "runningOperationIds": []
+      }
+    }
+  ],
+  "outputs": {}
+}

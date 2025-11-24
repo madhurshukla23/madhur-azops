@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Web/serverFarms",
+      "name": "ASP-snow-87a7",
+      "sku": {
+        "capacity": 1,
+        "family": "WS",
+        "name": "WS1",
+        "size": "WS1",
+        "tier": "WorkflowStandard"
+      },
+      "kind": "elastic",
+      "apiVersion": "2024-11-01",
+      "location": "canadacentral",
+      "properties": {
+        "asyncScalingEnabled": false,
+        "computeMode": "Dedicated",
+        "currentNumberOfWorkers": 1,
+        "currentNumberOfZonesUtilized": 1,
+        "currentWorkerSize": "D1",
+        "currentWorkerSizeId": 3,
+        "elasticScaleEnabled": true,
+        "geoRegion": "Canada Central",
+        "hyperV": false,
+        "isCustomMode": false,
+        "isSpot": false,
+        "isXenon": false,
+        "kind": "elastic",
+        "maximumElasticWorkerCount": 20,
+        "maximumNumberOfWorkers": 20,
+        "maximumNumberOfZones": 3,
+        "mdmId": "waws-prod-yt1-079_33301",
+        "name": "ASP-snow-87a7",
+        "numberOfSites": 1,
+        "numberOfWorkers": 1,
+        "perSiteScaling": false,
+        "planName": "VirtualDedicatedPlan",
+        "powerState": "Running",
+        "reserved": false,
+        "resourceGroup": "snow",
+        "serverFarmId": 33301,
+        "status": "Ready",
+        "subscription": "f3d6b6b0-1c3e-4194-aced-57f1f90bb945",
+        "targetWorkerCount": 0,
+        "targetWorkerSizeId": 0,
+        "vnetConnectionsMax": 2,
+        "vnetConnectionsUsed": 0,
+        "webSpace": "snow-CanadaCentralwebspace",
+        "workerSize": "D1",
+        "workerSizeId": 3,
+        "zoneRedundant": false
+      }
+    }
+  ],
+  "outputs": {}
+}

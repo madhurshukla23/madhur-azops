@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-01-01",
+      "name": "snowbb63/default/flowc966779dcead336jobtriggers00",
+      "properties": {
+        "metadata": {}
+      },
+      "type": "Microsoft.Storage/storageAccounts/queueServices/queues"
+    }
+  ],
+  "outputs": {}
+}
