@@ -10,14 +10,12 @@
   "variables": {},
   "resources": [
     {
-      "apiVersion": "2025-01-01",
-      "name": "stlzagent4486/default",
+      "apiVersion": "2025-06-01",
+      "name": "foundry-lz-agent-9639/Default",
       "properties": {
-        "cors": {
-          "corsRules": []
-        }
+        "state": "Disabled"
       },
-      "type": "Microsoft.Storage/storageAccounts/queueServices"
+      "type": "Microsoft.CognitiveServices/accounts/defenderForAISettings"
     }
   ],
   "outputs": {}

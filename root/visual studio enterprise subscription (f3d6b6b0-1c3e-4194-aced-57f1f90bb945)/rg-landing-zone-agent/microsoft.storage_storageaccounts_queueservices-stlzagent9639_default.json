@@ -10,12 +10,14 @@
   "variables": {},
   "resources": [
     {
-      "apiVersion": "2025-06-01",
-      "name": "openai-lz-agent-4486/Default",
+      "apiVersion": "2025-01-01",
+      "name": "stlzagent9639/default",
       "properties": {
-        "state": "Disabled"
+        "cors": {
+          "corsRules": []
+        }
       },
-      "type": "Microsoft.CognitiveServices/accounts/defenderForAISettings"
+      "type": "Microsoft.Storage/storageAccounts/queueServices"
     }
   ],
   "outputs": {}

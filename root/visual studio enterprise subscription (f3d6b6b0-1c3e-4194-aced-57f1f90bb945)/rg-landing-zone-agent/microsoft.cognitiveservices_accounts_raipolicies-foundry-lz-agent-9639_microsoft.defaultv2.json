@@ -11,7 +11,7 @@
   "resources": [
     {
       "apiVersion": "2025-06-01",
-      "name": "openai-lz-agent-4486/Microsoft.DefaultV3",
+      "name": "foundry-lz-agent-9639/Microsoft.DefaultV2",
       "properties": {
         "contentFilters": [
           {
@@ -68,6 +68,24 @@
             "enabled": true,
             "name": "Selfharm",
             "severityThreshold": "Medium",
+            "source": "Completion"
+          },
+          {
+            "blocking": true,
+            "enabled": true,
+            "name": "Jailbreak",
+            "source": "Prompt"
+          },
+          {
+            "blocking": true,
+            "enabled": true,
+            "name": "Protected Material Text",
+            "source": "Completion"
+          },
+          {
+            "blocking": false,
+            "enabled": true,
+            "name": "Protected Material Code",
             "source": "Completion"
           }
         ],

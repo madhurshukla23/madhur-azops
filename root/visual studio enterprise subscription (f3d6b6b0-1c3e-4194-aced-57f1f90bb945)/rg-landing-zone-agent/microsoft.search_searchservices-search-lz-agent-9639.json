@@ -11,7 +11,7 @@
   "resources": [
     {
       "type": "Microsoft.Search/searchServices",
-      "name": "search-lz-agent-4486",
+      "name": "search-lz-agent-9639",
       "sku": {
         "name": "basic"
       },
