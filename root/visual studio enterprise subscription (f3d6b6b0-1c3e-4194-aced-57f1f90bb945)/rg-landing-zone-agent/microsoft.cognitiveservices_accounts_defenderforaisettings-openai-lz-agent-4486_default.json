@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-06-01",
+      "name": "openai-lz-agent-4486/Default",
+      "properties": {
+        "state": "Disabled"
+      },
+      "type": "Microsoft.CognitiveServices/accounts/defenderForAISettings"
+    }
+  ],
+  "outputs": {}
+}
