@@ -1,0 +1,317 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.CognitiveServices/accounts",
+      "name": "openai-lz-agent-4486",
+      "sku": {
+        "name": "S0"
+      },
+      "kind": "OpenAI",
+      "apiVersion": "2025-06-01",
+      "location": "eastus",
+      "properties": {
+        "allowProjectManagement": false,
+        "apiProperties": {},
+        "callRateLimit": {
+          "rules": [
+            {
+              "count": 30,
+              "key": "openai.dalle.post",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "dalle/*"
+                },
+                {
+                  "method": "POST",
+                  "path": "openai/images/*"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 30,
+              "key": "openai.dalle.other",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "dalle/*"
+                },
+                {
+                  "method": "*",
+                  "path": "openai/operations/images/*"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 120,
+              "key": "openai.assistants.list",
+              "matchPatterns": [
+                {
+                  "method": "GET",
+                  "path": "openai/assistants"
+                }
+              ],
+              "renewalPeriod": 60
+            },
+            {
+              "count": 120,
+              "key": "openai.threads.list",
+              "matchPatterns": [
+                {
+                  "method": "GET",
+                  "path": "openai/threads"
+                }
+              ],
+              "renewalPeriod": 60
+            },
+            {
+              "count": 120,
+              "key": "openai.vectorstores.list",
+              "matchPatterns": [
+                {
+                  "method": "GET",
+                  "path": "openai/vector_stores"
+                }
+              ],
+              "renewalPeriod": 60
+            },
+            {
+              "count": 60,
+              "key": "openai.vectorstores.post",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "openai/vector_stores"
+                },
+                {
+                  "method": "POST",
+                  "path": "openai/vector_stores/*"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 100000,
+              "key": "openai.assistants.default",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "openai/assistants"
+                },
+                {
+                  "method": "*",
+                  "path": "openai/assistants/*"
+                },
+                {
+                  "method": "*",
+                  "path": "openai/threads"
+                },
+                {
+                  "method": "*",
+                  "path": "openai/threads/*"
+                },
+                {
+                  "method": "*",
+                  "path": "openai/vector_stores"
+                },
+                {
+                  "method": "*",
+                  "path": "openai/vector_stores/*"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 100000,
+              "key": "openai.responses.default",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "openai/responses"
+                },
+                {
+                  "method": "*",
+                  "path": "openai/responses/*"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 30,
+              "key": "openai.batches.post",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "openai/v1/batches"
+                },
+                {
+                  "method": "POST",
+                  "path": "openai/batches"
+                }
+              ],
+              "renewalPeriod": 60
+            },
+            {
+              "count": 500,
+              "key": "openai.batches.get",
+              "matchPatterns": [
+                {
+                  "method": "GET",
+                  "path": "openai/v1/batches/*"
+                },
+                {
+                  "method": "GET",
+                  "path": "openai/batches/*"
+                }
+              ],
+              "renewalPeriod": 60
+            },
+            {
+              "count": 100,
+              "key": "openai.batches.list",
+              "matchPatterns": [
+                {
+                  "method": "GET",
+                  "path": "openai/v1/batches"
+                },
+                {
+                  "method": "GET",
+                  "path": "openai/batches"
+                }
+              ],
+              "renewalPeriod": 60
+            },
+            {
+              "count": 120,
+              "key": "openai.moderations.post",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "openai/v1/moderations"
+                },
+                {
+                  "method": "POST",
+                  "path": "openai/v1/moderations/exp/safeberry"
+                },
+                {
+                  "method": "POST",
+                  "path": "openai/v1/safeberry/moderations"
+                }
+              ],
+              "renewalPeriod": 60
+            },
+            {
+              "count": 30,
+              "key": "openai",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "openai/*"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 30,
+              "key": "default",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "*"
+                }
+              ],
+              "renewalPeriod": 1
+            }
+          ]
+        },
+        "capabilities": [
+          {
+            "name": "VirtualNetworks"
+          },
+          {
+            "name": "CustomerManagedKey"
+          },
+          {
+            "name": "MaxFineTuneCount",
+            "value": "500"
+          },
+          {
+            "name": "MaxRunningFineTuneCount",
+            "value": "3"
+          },
+          {
+            "name": "MaxUserFileCount",
+            "value": "100"
+          },
+          {
+            "name": "MaxTrainingFileSize",
+            "value": "512000000"
+          },
+          {
+            "name": "MaxUserFileImportDurationInHours",
+            "value": "1"
+          },
+          {
+            "name": "MaxFineTuneJobDurationInHours",
+            "value": "720"
+          },
+          {
+            "name": "MaxEvaluationRunDurationInHours",
+            "value": "5"
+          },
+          {
+            "name": "MaxRunningEvaluationCount",
+            "value": "5"
+          },
+          {
+            "name": "MaxRunningGlobalStandardFineTuneCount",
+            "value": "3"
+          },
+          {
+            "name": "TrustedServices",
+            "value": "Microsoft.CognitiveServices,Microsoft.MachineLearningServices,Microsoft.Search,Microsoft.VideoIndexer"
+          },
+          {
+            "name": "NetworkSecurityPerimeter"
+          },
+          {
+            "name": "RaiMonitor"
+          },
+          {
+            "name": "quotaRefundsEnabled",
+            "value": "false"
+          }
+        ],
+        "customSubDomainName": "openai-lz-agent-4486",
+        "endpoint": "https://openai-lz-agent-4486.openai.azure.com/",
+        "endpoints": {
+          "Azure OpenAI Legacy API - Latest moniker": "https://openai-lz-agent-4486.openai.azure.com/",
+          "OpenAI Dall-E API": "https://openai-lz-agent-4486.openai.azure.com/",
+          "OpenAI Language Model Instance API": "https://openai-lz-agent-4486.openai.azure.com/",
+          "OpenAI Model Scaleset API": "https://openai-lz-agent-4486.openai.azure.com/",
+          "OpenAI Moderations API": "https://openai-lz-agent-4486.openai.azure.com/",
+          "OpenAI Realtime API": "https://openai-lz-agent-4486.openai.azure.com/",
+          "OpenAI Sora API": "https://openai-lz-agent-4486.openai.azure.com/",
+          "OpenAI Whisper API": "https://openai-lz-agent-4486.openai.azure.com/",
+          "Token Service API": "https://openai-lz-agent-4486.openai.azure.com/"
+        },
+        "internalId": "ea8eee04d21c4ed798602fbb301cacff",
+        "isMigrated": false,
+        "privateEndpointConnections": [],
+        "publicNetworkAccess": "Enabled"
+      }
+    }
+  ],
+  "outputs": {}
+}
