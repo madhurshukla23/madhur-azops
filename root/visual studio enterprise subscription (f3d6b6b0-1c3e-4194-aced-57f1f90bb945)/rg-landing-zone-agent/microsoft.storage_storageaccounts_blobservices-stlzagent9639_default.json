@@ -11,13 +11,21 @@
   "resources": [
     {
       "apiVersion": "2025-01-01",
-      "name": "stlzagent4486/default",
+      "name": "stlzagent9639/default",
       "properties": {
         "cors": {
           "corsRules": []
+        },
+        "deleteRetentionPolicy": {
+          "allowPermanentDelete": false,
+          "enabled": false
         }
       },
-      "type": "Microsoft.Storage/storageAccounts/tableServices"
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "type": "Microsoft.Storage/storageAccounts/blobServices"
     }
   ],
   "outputs": {}

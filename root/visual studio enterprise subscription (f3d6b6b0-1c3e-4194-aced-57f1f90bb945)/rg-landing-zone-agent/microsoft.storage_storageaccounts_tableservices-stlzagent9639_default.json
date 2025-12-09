@@ -11,16 +11,13 @@
   "resources": [
     {
       "apiVersion": "2025-01-01",
-      "name": "stlzagent4486/default/customer-artifacts",
+      "name": "stlzagent9639/default",
       "properties": {
-        "defaultEncryptionScope": "$account-encryption-key",
-        "denyEncryptionScopeOverride": false,
-        "immutableStorageWithVersioning": {
-          "enabled": false
-        },
-        "publicAccess": "None"
+        "cors": {
+          "corsRules": []
+        }
       },
-      "type": "Microsoft.Storage/storageAccounts/blobServices/containers"
+      "type": "Microsoft.Storage/storageAccounts/tableServices"
     }
   ],
   "outputs": {}

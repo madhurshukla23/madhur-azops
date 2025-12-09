@@ -1,0 +1,111 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.CognitiveServices/accounts",
+      "name": "vision-lz-agent-9639",
+      "sku": {
+        "name": "S1"
+      },
+      "kind": "ComputerVision",
+      "apiVersion": "2025-06-01",
+      "location": "eastus",
+      "properties": {
+        "allowProjectManagement": false,
+        "callRateLimit": {
+          "rules": [
+            {
+              "count": 30,
+              "dynamicThrottlingEnabled": true,
+              "key": "vision.recognizeText",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "vision/recognizeText"
+                },
+                {
+                  "method": "GET",
+                  "path": "vision/textOperations/*"
+                },
+                {
+                  "method": "*",
+                  "path": "vision/read/*"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 20,
+              "dynamicThrottlingEnabled": true,
+              "key": "vision",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "vision/*"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 500,
+              "key": "container.billing",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "billing/*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 20,
+              "dynamicThrottlingEnabled": true,
+              "key": "default",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "*"
+                }
+              ],
+              "renewalPeriod": 1
+            }
+          ]
+        },
+        "capabilities": [
+          {
+            "name": "DynamicThrottling"
+          },
+          {
+            "name": "CustomerManagedKey"
+          },
+          {
+            "name": "VirtualNetworks"
+          },
+          {
+            "name": "Container",
+            "value": "ComputerVision.VideoAnalytics,ComputerVision.ComputerVisionRead,ComputerVision.ocr,ComputerVision.readfile,ComputerVision.readfiledsd,ComputerVision.recognizetext,ComputerVision.ComputerVision,ComputerVision.ocrlayoutworker,ComputerVision.ocrcontroller,ComputerVision.ocrdispatcher,ComputerVision.ocrbillingprocessor,ComputerVision.ocranalyzer,ComputerVision.ocrpagesplitter,ComputerVision.ocrapi,ComputerVision.ocrengineworker"
+          }
+        ],
+        "customSubDomainName": "vision-lz-agent-9639",
+        "endpoint": "https://vision-lz-agent-9639.cognitiveservices.azure.com/",
+        "endpoints": {
+          "Computer Vision": "https://vision-lz-agent-9639.cognitiveservices.azure.com/",
+          "Container": "https://vision-lz-agent-9639.cognitiveservices.azure.com/"
+        },
+        "internalId": "1183beec2aaf4ebb874605cf0f0739be",
+        "isMigrated": false,
+        "privateEndpointConnections": [],
+        "publicNetworkAccess": "Enabled"
+      }
+    }
+  ],
+  "outputs": {}
+}

@@ -11,13 +11,13 @@
   "resources": [
     {
       "apiVersion": "2025-06-01",
-      "name": "openai-lz-agent-4486/gpt-4o-mini",
+      "name": "foundry-lz-agent-9639/text-embedding-ada-002",
       "properties": {
         "currentCapacity": 10,
         "model": {
           "format": "OpenAI",
-          "name": "gpt-4o-mini",
-          "version": "2024-07-18"
+          "name": "text-embedding-ada-002",
+          "version": "2"
         },
         "versionUpgradeOption": "OnceNewDefaultVersionAvailable"
       },

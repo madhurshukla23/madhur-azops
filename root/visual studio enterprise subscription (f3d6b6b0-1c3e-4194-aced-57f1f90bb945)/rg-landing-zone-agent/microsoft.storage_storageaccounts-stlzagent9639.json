@@ -11,7 +11,7 @@
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
-      "name": "stlzagent4486",
+      "name": "stlzagent9639",
       "sku": {
         "name": "Standard_LRS",
         "tier": "Standard"
@@ -47,12 +47,12 @@
           "virtualNetworkRules": []
         },
         "primaryEndpoints": {
-          "blob": "https://stlzagent4486.blob.core.windows.net/",
-          "dfs": "https://stlzagent4486.dfs.core.windows.net/",
-          "file": "https://stlzagent4486.file.core.windows.net/",
-          "queue": "https://stlzagent4486.queue.core.windows.net/",
-          "table": "https://stlzagent4486.table.core.windows.net/",
-          "web": "https://stlzagent4486.z13.web.core.windows.net/"
+          "blob": "https://stlzagent9639.blob.core.windows.net/",
+          "dfs": "https://stlzagent9639.dfs.core.windows.net/",
+          "file": "https://stlzagent9639.file.core.windows.net/",
+          "queue": "https://stlzagent9639.queue.core.windows.net/",
+          "table": "https://stlzagent9639.table.core.windows.net/",
+          "web": "https://stlzagent9639.z13.web.core.windows.net/"
         },
         "primaryLocation": "eastus",
         "privateEndpointConnections": [],

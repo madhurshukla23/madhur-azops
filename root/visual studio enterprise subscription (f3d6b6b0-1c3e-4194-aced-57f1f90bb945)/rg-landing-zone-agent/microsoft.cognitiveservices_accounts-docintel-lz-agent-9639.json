@@ -1,0 +1,460 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.CognitiveServices/accounts",
+      "name": "docintel-lz-agent-9639",
+      "sku": {
+        "name": "S0"
+      },
+      "kind": "FormRecognizer",
+      "apiVersion": "2025-06-01",
+      "location": "eastus",
+      "properties": {
+        "allowProjectManagement": false,
+        "callRateLimit": {
+          "rules": [
+            {
+              "count": 500,
+              "key": "container.billing",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "billing/*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 15,
+              "dynamicThrottlingEnabled": true,
+              "key": "formrecognizer.analyze",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/custom/models/{id}/analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/custom/models/{modelId}/analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/prebuilt/businessCard/analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/prebuilt/idDocument/analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/prebuilt/invoice/analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/layout/analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/prebuilt/receipt/analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/prebuilt/receipt/asyncBatchAnalyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/documentModels/{modelId}:analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/read"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/documentClassifiers/{classifierId}:analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentModels/{modelId}:analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentModels/{modelId}:analyze?_overload=analyzeDocument"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentClassifiers/{classifierId}:analyze"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentClassifiers/{classifierId}:analyze?_overload=classifyDocument"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentModels/{modelId}:analyzeBatch"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 50,
+              "dynamicThrottlingEnabled": true,
+              "key": "formrecognizer.get.object",
+              "matchPatterns": [
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/custom/models/{modelId}/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/prebuilt/businessCard/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/prebuilt/idDocument/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/prebuilt/invoice/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/prebuilt/receipt/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/prebuilt/receipt/operations/{operationId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/documentModels/{modelId}/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/layout/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/custom/models/{modelId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/custom/models/{modelId}/copyResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/operations/{operationId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/custom/models/{modelId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/custom/models/{id}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/documentModels/{modelId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/documentClassifiers/{classifierId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/documentClassifiers/{classifierId}/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentModels/{modelId}/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/operations/{operationId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/operations/{operationId}?_overload={_overload}"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentModels/{modelId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentClassifiers/{classifierId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentClassifiers/{classifierId}/analyzeResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentModels/{modelId}/analyzeBatchResults/{resultId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentModels/{modelId}/analyzeResults/{resultId}/figures/{figureId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentModels/{modelId}/analyzeResults/{resultId}/pdf"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 10,
+              "dynamicThrottlingEnabled": true,
+              "key": "formrecognizer.list.objects",
+              "matchPatterns": [
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/operations"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/info"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/documentModels"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/custom/models"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/documentClassifiers"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentModels"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/operations"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/info"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentClassifiers"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/documentModels/{modelId}/analyzeBatchResults"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 5,
+              "dynamicThrottlingEnabled": true,
+              "key": "formrecognizer.model.management",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/custom/models"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/custom/models/compose"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/custom/models/copyAuthorization"
+                },
+                {
+                  "method": "DELETE",
+                  "path": "formrecognizer/custom/models/{id}"
+                },
+                {
+                  "method": "GET",
+                  "path": "formrecognizer/custom/models/{id}/keys"
+                },
+                {
+                  "method": "DELETE",
+                  "path": "formrecognizer/custom/models/{modelId}"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/custom/models/{modelId}/copy"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/documentModels/{modelId}:copyTo"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/documentModels:authorizeCopy"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/documentModels:build"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/documentModels:compose"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/custom/train"
+                },
+                {
+                  "method": "DELETE",
+                  "path": "formrecognizer/custom/models/{modelId}"
+                },
+                {
+                  "method": "DELETE",
+                  "path": "formrecognizer/documentModels/{modelId}"
+                },
+                {
+                  "method": "POST",
+                  "path": "formrecognizer/documentClassifiers:build"
+                },
+                {
+                  "method": "DELETE",
+                  "path": "formrecognizer/documentClassifiers/{classifierId}"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentModels:authorizeCopy"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentModels/{modelId}:copyTo"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentModels:build"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentModels:compose"
+                },
+                {
+                  "method": "DELETE",
+                  "path": "documentintelligence/documentModels/{modelId}"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentClassifiers:build"
+                },
+                {
+                  "method": "DELETE",
+                  "path": "documentintelligence/documentClassifiers/{classifierId}"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentClassifiers/{classifierId}:copyTo"
+                },
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/documentClassifiers:authorizeCopy"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 15,
+              "key": "formrecognizer.chat.build",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/chat:build"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 5,
+              "key": "formrecognizer.chat.complete",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "documentintelligence/chat/{chatId}:complete"
+                }
+              ],
+              "renewalPeriod": 60
+            },
+            {
+              "count": 100,
+              "key": "formrecognizer.labeling",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "documentintelligence/labelingProjects/*"
+                },
+                {
+                  "method": "*",
+                  "path": "documentintelligence/classificationProjects/*"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/labelingProjects"
+                },
+                {
+                  "method": "GET",
+                  "path": "documentintelligence/classificationProjects"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 5,
+              "dynamicThrottlingEnabled": true,
+              "key": "default",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "*"
+                }
+              ],
+              "renewalPeriod": 1
+            }
+          ]
+        },
+        "capabilities": [
+          {
+            "name": "DynamicThrottling"
+          },
+          {
+            "name": "VirtualNetworks"
+          },
+          {
+            "name": "CustomerManagedKey"
+          },
+          {
+            "name": "Container",
+            "value": "FormRecognizer.Forms,FormRecognizer.FormRecognizerCustomSupervised,FormRecognizer.FormRecognizerLayout,FormRecognizer.formrecognizerreadlayout,FormRecognizer.FormRecognizerId,FormRecognizer.FormRecognizerInvoice,FormRecognizer.FormRecognizerReceipt,FormRecognizer.FormRecognizerBusinessCard,FormRecognizer.FormRecognizerRead,FormRecognizer.FormRecognizerKvp"
+          }
+        ],
+        "customSubDomainName": "docintel-lz-agent-9639",
+        "endpoint": "https://docintel-lz-agent-9639.cognitiveservices.azure.com/",
+        "endpoints": {
+          "Container": "https://docintel-lz-agent-9639.cognitiveservices.azure.com/",
+          "FormRecognizer": "https://docintel-lz-agent-9639.cognitiveservices.azure.com/"
+        },
+        "internalId": "861c48a610e04ace9f0d859802e26cf5",
+        "isMigrated": false,
+        "privateEndpointConnections": [],
+        "publicNetworkAccess": "Enabled"
+      }
+    }
+  ],
+  "outputs": {}
+}
