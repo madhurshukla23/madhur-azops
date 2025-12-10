@@ -24,7 +24,7 @@
         },
         "disableLocalAuth": false,
         "encryptionWithCmk": {
-          "encryptionComplianceStatus": "Compliant",
+          "encryptionComplianceStatus": "NonCompliant",
           "enforcement": "Unspecified"
         },
         "hostingMode": "default",
