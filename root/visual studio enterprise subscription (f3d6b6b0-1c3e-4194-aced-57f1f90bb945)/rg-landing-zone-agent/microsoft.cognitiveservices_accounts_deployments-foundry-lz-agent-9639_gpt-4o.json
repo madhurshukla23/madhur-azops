@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-06-01",
+      "name": "foundry-lz-agent-9639/gpt-4o",
+      "properties": {
+        "currentCapacity": 10,
+        "model": {
+          "format": "OpenAI",
+          "name": "gpt-4o",
+          "version": "2024-08-06"
+        },
+        "versionUpgradeOption": "OnceNewDefaultVersionAvailable"
+      },
+      "sku": {
+        "capacity": 10,
+        "name": "Standard"
+      },
+      "type": "Microsoft.CognitiveServices/accounts/deployments"
+    }
+  ],
+  "outputs": {}
+}
