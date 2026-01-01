@@ -11,7 +11,7 @@
   "resources": [
     {
       "apiVersion": "2025-01-01",
-      "name": "snowbb63/default/AzureFunctionsScaleMetrics202512",
+      "name": "snowbb63/default/AzureFunctionsScaleMetrics202601",
       "properties": {},
       "type": "Microsoft.Storage/storageAccounts/tableServices/tables"
     }
