@@ -1915,6 +1915,10 @@
             "name": "NetworkSecurityPerimeter"
           },
           {
+            "name": "EnabledApimVnet",
+            "value": "true"
+          },
+          {
             "name": "MaxRunningGlobalStandardFineTuneCount",
             "value": "3"
           },
