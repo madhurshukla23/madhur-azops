@@ -698,7 +698,6 @@
             },
             {
               "count": 15,
-              "dynamicThrottlingEnabled": true,
               "key": "formrecognizer.analyze",
               "matchPatterns": [
                 {
