@@ -1454,11 +1454,11 @@
                 },
                 {
                   "method": "POST",
-                  "path": "/analyzers/{analyzerId}:analyzebinary"
+                  "path": "contentunderstanding/analyzers/{analyzerId}:analyzebinary"
                 },
                 {
                   "method": "POST",
-                  "path": "/classifiers/{classifierId}:classify"
+                  "path": "contentunderstanding/classifiers/{classifierId}:classify"
                 }
               ],
               "renewalPeriod": 1
@@ -1474,11 +1474,19 @@
                 },
                 {
                   "method": "GET",
+                  "path": "contentunderstanding/analyzers/{analyzerId}/operations/{operationId}"
+                },
+                {
+                  "method": "GET",
                   "path": "contentunderstanding/analyzerResults/{operationId}"
                 },
                 {
                   "method": "GET",
                   "path": "contentunderstanding/analyzerResults/{operationId}/files/{path}"
+                },
+                {
+                  "method": "GET",
+                  "path": "contentunderstanding/analyzerResults/{resultId}/*"
                 },
                 {
                   "method": "GET",
@@ -1495,6 +1503,10 @@
                 {
                   "method": "GET",
                   "path": "contentunderstanding/classifierResults/{operationId}"
+                },
+                {
+                  "method": "GET",
+                  "path": "contentunderstanding/defaults"
                 }
               ],
               "renewalPeriod": 1
@@ -1551,6 +1563,14 @@
                 {
                   "method": "POST",
                   "path": "contentunderstanding/analyzers/{analyzerId}:copy"
+                },
+                {
+                  "method": "PATCH",
+                  "path": "contentunderstanding/defaults"
+                },
+                {
+                  "method": "DELETE",
+                  "path": "contentunderstanding/analyzerResults/{operationId}"
                 }
               ],
               "renewalPeriod": 1
