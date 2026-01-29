@@ -16,7 +16,7 @@
         "name": "S1"
       },
       "kind": "ComputerVision",
-      "apiVersion": "2025-06-01",
+      "apiVersion": "2025-09-01",
       "location": "eastus",
       "properties": {
         "allowProjectManagement": false,
@@ -90,8 +90,12 @@
             "name": "VirtualNetworks"
           },
           {
+            "name": "EnabledApimVnet",
+            "value": "true"
+          },
+          {
             "name": "Container",
-            "value": "ComputerVision.VideoAnalytics,ComputerVision.ComputerVisionRead,ComputerVision.ocr,ComputerVision.readfile,ComputerVision.readfiledsd,ComputerVision.recognizetext,ComputerVision.ComputerVision,ComputerVision.ocrlayoutworker,ComputerVision.ocrcontroller,ComputerVision.ocrdispatcher,ComputerVision.ocrbillingprocessor,ComputerVision.ocranalyzer,ComputerVision.ocrpagesplitter,ComputerVision.ocrapi,ComputerVision.ocrengineworker"
+            "value": "ComputerVision.ComputerVisionRead,ComputerVision.ocr,ComputerVision.readfile,ComputerVision.readfiledsd,ComputerVision.recognizetext,ComputerVision.ComputerVision,ComputerVision.ocrlayoutworker,ComputerVision.ocrcontroller,ComputerVision.ocrdispatcher,ComputerVision.ocrbillingprocessor,ComputerVision.ocranalyzer,ComputerVision.ocrpagesplitter,ComputerVision.ocrapi,ComputerVision.ocrengineworker"
           }
         ],
         "customSubDomainName": "vision-lz-agent-9639",

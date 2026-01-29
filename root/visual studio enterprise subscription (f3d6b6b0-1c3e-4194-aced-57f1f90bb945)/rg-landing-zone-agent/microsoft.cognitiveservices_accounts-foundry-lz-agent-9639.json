@@ -16,7 +16,7 @@
         "name": "S0"
       },
       "kind": "AIServices",
-      "apiVersion": "2025-06-01",
+      "apiVersion": "2025-09-01",
       "location": "eastus",
       "identity": {
         "principalId": "c948685d-c237-41a9-a676-abd5dd3556f0",
@@ -1444,6 +1444,54 @@
               "renewalPeriod": 1
             },
             {
+              "count": 200,
+              "dynamicThrottlingEnabled": true,
+              "key": "ContentSafety.Provenance.ManifestBind",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "contentsafety/provenance/manifest:bind*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 400,
+              "dynamicThrottlingEnabled": true,
+              "key": "ContentSafety.Provenance.DigestSign",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "contentsafety/provenance/digest:sign*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 1,
+              "dynamicThrottlingEnabled": true,
+              "key": "ContentSafety.Provenance.Detect",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "contentsafety/provenance:detect*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 200,
+              "dynamicThrottlingEnabled": true,
+              "key": "ContentSafety.Provenance.Detect1P",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "contentsafety/provenance:detect_1p*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
               "count": 15,
               "dynamicThrottlingEnabled": true,
               "key": "contentunderstanding.analyze",
@@ -1946,7 +1994,7 @@
           },
           {
             "name": "Container",
-            "value": "ContentSafety.TextAnalyze,ContentSafety.ImageAnalyze,ComputerVision.VideoAnalytics,ComputerVision.ComputerVisionRead,ComputerVision.ocr,ComputerVision.readfile,ComputerVision.readfiledsd,ComputerVision.recognizetext,ComputerVision.ComputerVision,ComputerVision.ocrlayoutworker,ComputerVision.ocrcontroller,ComputerVision.ocrdispatcher,ComputerVision.ocrbillingprocessor,ComputerVision.ocranalyzer,ComputerVision.ocrpagesplitter,ComputerVision.ocrapi,ComputerVision.ocrengineworker,FormRecognizer.Forms,FormRecognizer.FormRecognizerCustomSupervised,FormRecognizer.FormRecognizerLayout,FormRecognizer.formrecognizerreadlayout,FormRecognizer.FormRecognizerId,FormRecognizer.FormRecognizerInvoice,FormRecognizer.FormRecognizerReceipt,FormRecognizer.FormRecognizerBusinessCard,FormRecognizer.FormRecognizerRead,FormRecognizer.FormRecognizerKvp,SpeechServices.CustomSpeechToText,SpeechServices.NeuralTextToSpeechOnPrem,SpeechServices.DPP,SpeechServices.SpeechToText,SpeechServices.ctsdiarizer,SpeechServices.diarization,TextAnalytics.Healthcare,TextAnalytics.EntityV3,TextAnalytics.EntityONNX,TextAnalytics.Keyphrase,TextAnalytics.KeyphraseV2,TextAnalytics.KeyPhraseONNX,TextAnalytics.LanguageFastText,TextAnalytics.Language,TextAnalytics.LanguageV2,TextAnalytics.Sentiment,TextAnalytics.SentimentV2,TextAnalytics.SentimentV3,TextAnalytics.SentimentV3Preview,TextAnalytics.SentimentONNX,TextAnalytics.CustomNER,TextAnalytics.textanalyticsdispatcher,TextAnalytics.SummarizationFrontend,TextAnalytics.SummarizationWorker,TextAnalytics.PII,TextAnalytics.CluRuntime,TextAnalytics.CluContainer,TextAnalytics.NER"
+            "value": "ContentSafety.TextAnalyze,ContentSafety.ImageAnalyze,ComputerVision.ComputerVisionRead,ComputerVision.ocr,ComputerVision.readfile,ComputerVision.readfiledsd,ComputerVision.recognizetext,ComputerVision.ComputerVision,ComputerVision.ocrlayoutworker,ComputerVision.ocrcontroller,ComputerVision.ocrdispatcher,ComputerVision.ocrbillingprocessor,ComputerVision.ocranalyzer,ComputerVision.ocrpagesplitter,ComputerVision.ocrapi,ComputerVision.ocrengineworker,FormRecognizer.Forms,FormRecognizer.FormRecognizerCustomSupervised,FormRecognizer.FormRecognizerLayout,FormRecognizer.formrecognizerreadlayout,FormRecognizer.FormRecognizerId,FormRecognizer.FormRecognizerInvoice,FormRecognizer.FormRecognizerReceipt,FormRecognizer.FormRecognizerBusinessCard,FormRecognizer.FormRecognizerRead,FormRecognizer.FormRecognizerKvp,SpeechServices.CustomSpeechToText,SpeechServices.NeuralTextToSpeechOnPrem,SpeechServices.DPP,SpeechServices.SpeechToText,SpeechServices.ctsdiarizer,SpeechServices.diarization,TextAnalytics.Healthcare,TextAnalytics.EntityV3,TextAnalytics.EntityONNX,TextAnalytics.Keyphrase,TextAnalytics.KeyphraseV2,TextAnalytics.KeyPhraseONNX,TextAnalytics.LanguageFastText,TextAnalytics.Language,TextAnalytics.LanguageV2,TextAnalytics.Sentiment,TextAnalytics.SentimentV2,TextAnalytics.SentimentV3,TextAnalytics.SentimentV3Preview,TextAnalytics.SentimentONNX,TextAnalytics.CustomNER,TextAnalytics.textanalyticsdispatcher,TextAnalytics.SummarizationFrontend,TextAnalytics.SummarizationWorker,TextAnalytics.PII,TextAnalytics.CluRuntime,TextAnalytics.CluContainer,TextAnalytics.NER"
           },
           {
             "name": "DynamicThrottling"

@@ -17,11 +17,12 @@
         "tier": "Standard"
       },
       "kind": "Storage",
-      "apiVersion": "2025-01-01",
+      "apiVersion": "2025-06-01",
       "location": "canadacentral",
       "tags": {},
       "properties": {
         "allowBlobPublicAccess": false,
+        "allowCrossTenantDelegationSas": false,
         "allowCrossTenantReplication": false,
         "allowSharedKeyAccess": true,
         "defaultToOAuthAuthentication": true,

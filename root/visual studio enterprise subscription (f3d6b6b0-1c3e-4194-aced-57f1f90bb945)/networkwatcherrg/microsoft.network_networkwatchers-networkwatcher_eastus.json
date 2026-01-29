@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Network/networkWatchers",
       "name": "NetworkWatcher_eastus",
-      "apiVersion": "2024-07-01",
+      "apiVersion": "2025-05-01",
       "location": "eastus",
       "properties": {
         "runningOperationIds": []
