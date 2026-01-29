@@ -16,7 +16,7 @@
         "name": "S0"
       },
       "kind": "FormRecognizer",
-      "apiVersion": "2025-06-01",
+      "apiVersion": "2025-09-01",
       "location": "eastus",
       "properties": {
         "allowProjectManagement": false,
@@ -433,6 +433,10 @@
           },
           {
             "name": "VirtualNetworks"
+          },
+          {
+            "name": "EnabledApimVnet",
+            "value": "true"
           },
           {
             "name": "CustomerManagedKey"

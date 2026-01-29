@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.Network/networkWatchers",
       "name": "NetworkWatcher_westus3",
-      "apiVersion": "2024-07-01",
+      "apiVersion": "2025-05-01",
       "location": "westus3",
       "properties": {
         "runningOperationIds": []
