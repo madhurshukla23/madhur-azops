@@ -692,6 +692,10 @@
                 {
                   "method": "*",
                   "path": "voice-live/realtime"
+                },
+                {
+                  "method": "*",
+                  "path": "voice-agent/realtime"
                 }
               ],
               "renewalPeriod": 60
