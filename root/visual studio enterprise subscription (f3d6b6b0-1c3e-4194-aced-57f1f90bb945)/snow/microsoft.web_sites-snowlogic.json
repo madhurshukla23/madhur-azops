@@ -13,7 +13,7 @@
       "type": "Microsoft.Web/sites",
       "name": "snowlogic",
       "kind": "functionapp,workflowapp",
-      "apiVersion": "2025-03-01",
+      "apiVersion": "2025-05-01",
       "location": "canadacentral",
       "identity": {
         "principalId": "4517eaec-95f4-4647-bea8-87fdd96fbd0a",
