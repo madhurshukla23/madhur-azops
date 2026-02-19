@@ -1986,6 +1986,10 @@
             "name": "NetworkSecurityPerimeter"
           },
           {
+            "name": "useEndpointRateLimiter",
+            "value": "Enabled"
+          },
+          {
             "name": "MaxRunningGlobalStandardFineTuneCount",
             "value": "3"
           },
