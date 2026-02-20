@@ -41,7 +41,7 @@
         "defaultHostName": "snowlogic-dabyfphdcnawcza5.canadacentral-01.azurewebsites.net",
         "deploymentId": "snowlogic",
         "dnsConfiguration": {},
-        "eligibleLogCategories": "WorkflowRuntime,FunctionAppLogs,AppServiceAuthenticationLogs",
+        "eligibleLogCategories": "WorkflowRuntime,FunctionAppLogs,AppServiceAuthenticationLogs,AppServiceAuditLogs,AppServiceIPSecAuditLogs",
         "enabled": true,
         "enabledHostNames": [
           "snowlogic-dabyfphdcnawcza5.canadacentral-01.azurewebsites.net",
@@ -52,6 +52,7 @@
         "ftpsHostName": "ftps://waws-prod-yt1-079.ftp.azurewebsites.windows.net/site/wwwroot",
         "functionsRuntimeAdminIsolationEnabled": false,
         "homeStamp": "waws-prod-yt1-079",
+        "hostNamePrivateStates": [],
         "hostNameSslStates": [
           {
             "hostType": "Standard",
@@ -73,12 +74,7 @@
         "httpsOnly": true,
         "hyperV": false,
         "inFlightFeatures": [
-          "SiteContainers",
-          "RouteGeoCapacityClientTrafficToV2",
-          "RouteOperationClientTrafficToV2",
-          "RouteGeoPlanClientTrafficToV2",
-          "RouteGeoSourceControlKeyClientTrafficToV2",
-          "RouteGeoUserClientTrafficToV2"
+          "SiteContainers"
         ],
         "inboundIpAddress": "20.48.204.6",
         "inboundIpv6Address": "2603:1030:f05:3::28",
@@ -109,7 +105,7 @@
         "resourceGroup": "snow",
         "runtimeAvailabilityState": "Normal",
         "scmSiteAlsoStopped": false,
-        "selfLink": "https://waws-prod-yt1-079.api.azurewebsites.windows.net:454/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/webspaces/snow-CanadaCentralwebspace/sites/snowlogic",
+        "selfLink": "https://waws-prod-yt1-079.api.azurewebsites.windows.net:455/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/webspaces/snow-CanadaCentralwebspace/sites/snowlogic",
         "serverFarmId": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/snow/providers/Microsoft.Web/serverfarms/ASP-snow-87a7",
         "siteConfig": {
           "acrUseManagedIdentityCreds": false,
