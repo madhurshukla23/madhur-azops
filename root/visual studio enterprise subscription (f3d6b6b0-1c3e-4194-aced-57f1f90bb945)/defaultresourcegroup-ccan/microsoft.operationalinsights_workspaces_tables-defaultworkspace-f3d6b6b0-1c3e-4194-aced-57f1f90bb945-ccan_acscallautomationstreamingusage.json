@@ -11,13 +11,13 @@
   "resources": [
     {
       "apiVersion": "2025-02-01",
-      "name": "DefaultWorkspace-f3d6b6b0-1c3e-4194-aced-57f1f90bb945-CCAN/ACSCallAutomationStreamingUsage",
+      "name": "DefaultWorkspace-f3d6b6b0-1c3e-4194-aced-57f1f90bb945-CCAN/AcsCallAutomationStreamingUsage",
       "properties": {
         "plan": "Analytics",
         "retentionInDays": 30,
         "schema": {
-          "displayName": "ACSCallAutomationStreamingUsage",
-          "name": "ACSCallAutomationStreamingUsage"
+          "displayName": "AcsCallAutomationStreamingUsage",
+          "name": "AcsCallAutomationStreamingUsage"
         },
         "totalRetentionInDays": 30
       },
