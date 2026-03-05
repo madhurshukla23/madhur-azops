@@ -17,7 +17,7 @@
         "tier": "Standard"
       },
       "kind": "Storage",
-      "apiVersion": "2025-06-01",
+      "apiVersion": "2025-08-01",
       "location": "canadacentral",
       "tags": {},
       "properties": {
