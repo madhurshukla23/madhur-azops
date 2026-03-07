@@ -701,6 +701,61 @@
               "renewalPeriod": 60
             },
             {
+              "count": 10000,
+              "key": "speech.speechtotext.frontend",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "stt/*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 10000,
+              "key": "speech.speechtotext.s2s.frontend",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "s2s/*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 10000,
+              "key": "speech.speechtotext.sttbase.frontend",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "sttbase/*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 10000,
+              "key": "speech.texttospeech.frontend",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "tts/*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 10000,
+              "key": "speech.texttospeech.customvoice.frontend",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "voice/*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
               "count": 15,
               "key": "formrecognizer.analyze",
               "matchPatterns": [
