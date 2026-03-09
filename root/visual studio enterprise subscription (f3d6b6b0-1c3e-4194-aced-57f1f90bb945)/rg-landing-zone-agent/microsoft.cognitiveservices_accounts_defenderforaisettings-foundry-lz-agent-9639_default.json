@@ -11,16 +11,11 @@
   "resources": [
     {
       "apiVersion": "2025-06-01",
-      "name": "snowbb63/default/azure-webjobs-secrets",
+      "name": "foundry-lz-agent-9639/Default",
       "properties": {
-        "defaultEncryptionScope": "$account-encryption-key",
-        "denyEncryptionScopeOverride": false,
-        "immutableStorageWithVersioning": {
-          "enabled": false
-        },
-        "publicAccess": "None"
+        "state": "Disabled"
       },
-      "type": "Microsoft.Storage/storageAccounts/blobServices/containers"
+      "type": "Microsoft.CognitiveServices/accounts/defenderForAISettings"
     }
   ],
   "outputs": {}
