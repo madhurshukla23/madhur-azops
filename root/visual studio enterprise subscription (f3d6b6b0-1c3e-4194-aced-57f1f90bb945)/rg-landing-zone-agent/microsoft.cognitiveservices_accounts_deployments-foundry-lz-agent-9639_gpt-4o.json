@@ -11,24 +11,21 @@
   "resources": [
     {
       "apiVersion": "2025-06-01",
-      "name": "snowbb63/default",
+      "name": "foundry-lz-agent-9639/gpt-4o",
       "properties": {
-        "cors": {
-          "corsRules": []
+        "currentCapacity": 10,
+        "model": {
+          "format": "OpenAI",
+          "name": "gpt-4o",
+          "version": "2024-08-06"
         },
-        "protocolSettings": {
-          "smb": {}
-        },
-        "shareDeleteRetentionPolicy": {
-          "days": 7,
-          "enabled": true
-        }
+        "versionUpgradeOption": "OnceNewDefaultVersionAvailable"
       },
       "sku": {
-        "name": "Standard_LRS",
-        "tier": "Standard"
+        "capacity": 10,
+        "name": "Standard"
       },
-      "type": "Microsoft.Storage/storageAccounts/fileServices"
+      "type": "Microsoft.CognitiveServices/accounts/deployments"
     }
   ],
   "outputs": {}
