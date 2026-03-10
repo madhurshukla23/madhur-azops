@@ -10,7 +10,7 @@
   "variables": {},
   "resources": [
     {
-      "apiVersion": "2025-06-01",
+      "apiVersion": "2025-10-01-preview",
       "name": "foundry-lz-agent-9639/Default",
       "properties": {
         "state": "Disabled"

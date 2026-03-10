@@ -10,7 +10,7 @@
   "variables": {},
   "resources": [
     {
-      "apiVersion": "2025-01-01",
+      "apiVersion": "2025-06-01",
       "name": "stlzagent9639/default/customer-artifacts",
       "properties": {
         "defaultEncryptionScope": "$account-encryption-key",

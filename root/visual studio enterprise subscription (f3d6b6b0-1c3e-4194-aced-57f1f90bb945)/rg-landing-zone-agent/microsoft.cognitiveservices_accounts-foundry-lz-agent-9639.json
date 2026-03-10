@@ -1759,6 +1759,17 @@
             },
             {
               "count": 30000,
+              "key": "mai",
+              "matchPatterns": [
+                {
+                  "method": "*",
+                  "path": "/mai"
+                }
+              ],
+              "renewalPeriod": 1
+            },
+            {
+              "count": 30000,
               "key": "models",
               "matchPatterns": [
                 {
@@ -2056,6 +2067,26 @@
             "value": "false"
           },
           {
+            "name": "audio",
+            "value": "true"
+          },
+          {
+            "name": "imageGenerations",
+            "value": "true"
+          },
+          {
+            "name": "chatCompletion",
+            "value": "true"
+          },
+          {
+            "name": "fineTune",
+            "value": "true"
+          },
+          {
+            "name": "imageEdits",
+            "value": "true"
+          },
+          {
             "name": "Container",
             "value": "ContentSafety.TextAnalyze,ContentSafety.ImageAnalyze,ContentSafety.Jailbreak,ContentSafety.jailbreakanalyze,ComputerVision.ComputerVisionRead,ComputerVision.ocr,ComputerVision.readfile,ComputerVision.readfiledsd,ComputerVision.recognizetext,ComputerVision.ComputerVision,ComputerVision.ocrlayoutworker,ComputerVision.ocrcontroller,ComputerVision.ocrdispatcher,ComputerVision.ocrbillingprocessor,ComputerVision.ocranalyzer,ComputerVision.ocrpagesplitter,ComputerVision.ocrapi,ComputerVision.ocrengineworker,FormRecognizer.Forms,FormRecognizer.FormRecognizerCustomSupervised,FormRecognizer.FormRecognizerLayout,FormRecognizer.formrecognizerreadlayout,FormRecognizer.FormRecognizerId,FormRecognizer.FormRecognizerInvoice,FormRecognizer.FormRecognizerReceipt,FormRecognizer.FormRecognizerBusinessCard,FormRecognizer.FormRecognizerRead,FormRecognizer.FormRecognizerKvp,SpeechServices.CustomSpeechToText,SpeechServices.NeuralTextToSpeechOnPrem,SpeechServices.DPP,SpeechServices.SpeechToText,SpeechServices.ctsdiarizer,SpeechServices.diarization,TextAnalytics.Healthcare,TextAnalytics.EntityV3,TextAnalytics.EntityONNX,TextAnalytics.Keyphrase,TextAnalytics.KeyphraseV2,TextAnalytics.KeyPhraseONNX,TextAnalytics.LanguageFastText,TextAnalytics.Language,TextAnalytics.LanguageV2,TextAnalytics.Sentiment,TextAnalytics.SentimentV2,TextAnalytics.SentimentV3,TextAnalytics.SentimentV3Preview,TextAnalytics.SentimentONNX,TextAnalytics.CustomNER,TextAnalytics.textanalyticsdispatcher,TextAnalytics.SummarizationFrontend,TextAnalytics.SummarizationWorker,TextAnalytics.PII,TextAnalytics.CluRuntime,TextAnalytics.CluContainer,TextAnalytics.NER"
           },
@@ -2075,6 +2106,8 @@
         "endpoints": {
           "AI Foundry API": "https://foundry-lz-agent-9639.services.ai.azure.com/",
           "Azure AI Model Inference API": "https://foundry-lz-agent-9639.services.ai.azure.com/",
+          "Azure MAI Model Inference API": "https://foundry-lz-agent-9639.services.ai.azure.com/",
+          "Azure MAI Model Inference API v1.0": "https://foundry-lz-agent-9639.services.ai.azure.com/",
           "Azure OpenAI Legacy API - Latest moniker": "https://foundry-lz-agent-9639.openai.azure.com/",
           "Cohere AI API": "https://foundry-lz-agent-9639.services.ai.azure.com/",
           "Computer Vision": "https://foundry-lz-agent-9639.cognitiveservices.azure.com/",
