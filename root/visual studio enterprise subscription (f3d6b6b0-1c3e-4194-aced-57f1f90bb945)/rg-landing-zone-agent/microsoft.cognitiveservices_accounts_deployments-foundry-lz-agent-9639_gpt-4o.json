@@ -10,10 +10,11 @@
   "variables": {},
   "resources": [
     {
-      "apiVersion": "2025-06-01",
+      "apiVersion": "2025-10-01-preview",
       "name": "foundry-lz-agent-9639/gpt-4o",
       "properties": {
         "currentCapacity": 10,
+        "deploymentState": "Running",
         "model": {
           "format": "OpenAI",
           "name": "gpt-4o",
