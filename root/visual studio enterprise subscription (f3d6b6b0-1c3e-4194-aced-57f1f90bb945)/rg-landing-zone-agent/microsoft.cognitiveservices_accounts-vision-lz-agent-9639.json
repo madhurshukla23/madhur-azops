@@ -16,7 +16,7 @@
         "name": "S1"
       },
       "kind": "ComputerVision",
-      "apiVersion": "2025-09-01",
+      "apiVersion": "2025-12-01",
       "location": "eastus",
       "properties": {
         "allowProjectManagement": false,
