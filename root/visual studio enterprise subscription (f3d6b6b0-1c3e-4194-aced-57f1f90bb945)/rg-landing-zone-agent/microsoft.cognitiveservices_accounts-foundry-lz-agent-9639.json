@@ -564,7 +564,7 @@
               "renewalPeriod": 1
             },
             {
-              "count": 1,
+              "count": 2,
               "key": "speech.liveavatarconnect",
               "matchPatterns": [
                 {
