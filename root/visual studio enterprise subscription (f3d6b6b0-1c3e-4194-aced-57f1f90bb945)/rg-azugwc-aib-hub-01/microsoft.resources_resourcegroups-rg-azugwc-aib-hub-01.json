@@ -11,7 +11,7 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "rg-azugwc-aib-terraform-level3",
+      "name": "rg-azugwc-aib-hub-01",
       "apiVersion": "2023-07-01",
       "location": "germanywestcentral",
       "tags": {

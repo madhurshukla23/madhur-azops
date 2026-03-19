@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Network/networkInterfaces",
+      "name": "pe-stgwazugwcaibcicdprd001.nic.c0511f1b-c5a7-45f5-8ddf-dbe5731bf98f",
+      "kind": "Regular",
+      "apiVersion": "2025-05-01",
+      "location": "germanywestcentral",
+      "tags": {
+        "environment": "prod",
+        "managed_by": "omotayo.aina@vodafone.com",
+        "platform": "AIB3",
+        "purpose": "ConnectionHub",
+        "region": "GWC"
+      },
+      "properties": {
+        "allowPort25Out": false,
+        "auxiliaryMode": "None",
+        "auxiliarySku": "None",
+        "defaultOutboundConnectivityEnabled": false,
+        "disableTcpStateTracking": false,
+        "dnsSettings": {
+          "appliedDnsServers": [],
+          "dnsServers": [],
+          "internalDomainNameSuffix": "whifzfabnykehc5youz2q1mvqf.frax.internal.cloudapp.net"
+        },
+        "enableAcceleratedNetworking": false,
+        "enableIPForwarding": false,
+        "hostedWorkloads": [],
+        "ipConfigurations": [
+          {
+            "etag": "W/\"d0a9a9f7-14f6-4b95-bc99-322eb8afe9d0\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/networkInterfaces/pe-stgwazugwcaibcicdprd001.nic.c0511f1b-c5a7-45f5-8ddf-dbe5731bf98f/ipConfigurations/privateEndpointIpConfig.f14f07d7-3401-4f74-871a-6adadf402a16",
+            "name": "privateEndpointIpConfig.f14f07d7-3401-4f74-871a-6adadf402a16",
+            "properties": {
+              "primary": true,
+              "privateIPAddress": "10.60.1.4",
+              "privateIPAddressVersion": "IPv4",
+              "privateIPAllocationMethod": "Dynamic",
+              "privateLinkConnectionProperties": {
+                "fqdns": [
+                  "stgwazugwcaibcicdprd001.blob.core.windows.net"
+                ],
+                "groupId": "blob",
+                "requiredMemberName": "blob"
+              },
+              "provisioningState": "Succeeded",
+              "subnet": {
+                "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/virtualNetworks/vnet-azugwc-aib-hub-prd-01/subnets/snet-pe"
+              }
+            },
+            "type": "Microsoft.Network/networkInterfaces/ipConfigurations"
+          }
+        ],
+        "nicType": "Standard",
+        "privateEndpoint": {
+          "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/privateEndpoints/pe-stgwazugwcaibcicdprd001"
+        },
+        "tapConfigurations": [],
+        "vnetEncryptionSupported": false
+      }
+    }
+  ],
+  "outputs": {}
+}

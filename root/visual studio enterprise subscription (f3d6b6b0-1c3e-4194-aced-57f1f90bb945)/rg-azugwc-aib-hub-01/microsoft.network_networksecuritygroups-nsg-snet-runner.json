@@ -1,0 +1,187 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Network/networkSecurityGroups",
+      "name": "nsg-snet-runner",
+      "apiVersion": "2025-05-01",
+      "location": "germanywestcentral",
+      "tags": {
+        "environment": "prod",
+        "managed_by": "omotayo.aina@vodafone.com",
+        "platform": "AIB3",
+        "purpose": "ConnectionHub",
+        "region": "GWC"
+      },
+      "properties": {
+        "defaultSecurityRules": [
+          {
+            "etag": "W/\"758d8aa1-5ae8-46a9-8996-31f2861a7998\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-runner/defaultSecurityRules/AllowVnetInBound",
+            "name": "AllowVnetInBound",
+            "properties": {
+              "access": "Allow",
+              "description": "Allow inbound traffic from all VMs in VNET",
+              "destinationAddressPrefix": "VirtualNetwork",
+              "destinationAddressPrefixes": [],
+              "destinationPortRange": "*",
+              "destinationPortRanges": [],
+              "direction": "Inbound",
+              "priority": 65000,
+              "protocol": "*",
+              "provisioningState": "Succeeded",
+              "sourceAddressPrefix": "VirtualNetwork",
+              "sourceAddressPrefixes": [],
+              "sourcePortRange": "*",
+              "sourcePortRanges": []
+            },
+            "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+          },
+          {
+            "etag": "W/\"758d8aa1-5ae8-46a9-8996-31f2861a7998\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-runner/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+            "name": "AllowAzureLoadBalancerInBound",
+            "properties": {
+              "access": "Allow",
+              "description": "Allow inbound traffic from azure load balancer",
+              "destinationAddressPrefix": "*",
+              "destinationAddressPrefixes": [],
+              "destinationPortRange": "*",
+              "destinationPortRanges": [],
+              "direction": "Inbound",
+              "priority": 65001,
+              "protocol": "*",
+              "provisioningState": "Succeeded",
+              "sourceAddressPrefix": "AzureLoadBalancer",
+              "sourceAddressPrefixes": [],
+              "sourcePortRange": "*",
+              "sourcePortRanges": []
+            },
+            "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+          },
+          {
+            "etag": "W/\"758d8aa1-5ae8-46a9-8996-31f2861a7998\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-runner/defaultSecurityRules/DenyAllInBound",
+            "name": "DenyAllInBound",
+            "properties": {
+              "access": "Deny",
+              "description": "Deny all inbound traffic",
+              "destinationAddressPrefix": "*",
+              "destinationAddressPrefixes": [],
+              "destinationPortRange": "*",
+              "destinationPortRanges": [],
+              "direction": "Inbound",
+              "priority": 65500,
+              "protocol": "*",
+              "provisioningState": "Succeeded",
+              "sourceAddressPrefix": "*",
+              "sourceAddressPrefixes": [],
+              "sourcePortRange": "*",
+              "sourcePortRanges": []
+            },
+            "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+          },
+          {
+            "etag": "W/\"758d8aa1-5ae8-46a9-8996-31f2861a7998\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-runner/defaultSecurityRules/AllowVnetOutBound",
+            "name": "AllowVnetOutBound",
+            "properties": {
+              "access": "Allow",
+              "description": "Allow outbound traffic from all VMs to all VMs in VNET",
+              "destinationAddressPrefix": "VirtualNetwork",
+              "destinationAddressPrefixes": [],
+              "destinationPortRange": "*",
+              "destinationPortRanges": [],
+              "direction": "Outbound",
+              "priority": 65000,
+              "protocol": "*",
+              "provisioningState": "Succeeded",
+              "sourceAddressPrefix": "VirtualNetwork",
+              "sourceAddressPrefixes": [],
+              "sourcePortRange": "*",
+              "sourcePortRanges": []
+            },
+            "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+          },
+          {
+            "etag": "W/\"758d8aa1-5ae8-46a9-8996-31f2861a7998\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-runner/defaultSecurityRules/AllowInternetOutBound",
+            "name": "AllowInternetOutBound",
+            "properties": {
+              "access": "Allow",
+              "description": "Allow outbound traffic from all VMs to Internet",
+              "destinationAddressPrefix": "Internet",
+              "destinationAddressPrefixes": [],
+              "destinationPortRange": "*",
+              "destinationPortRanges": [],
+              "direction": "Outbound",
+              "priority": 65001,
+              "protocol": "*",
+              "provisioningState": "Succeeded",
+              "sourceAddressPrefix": "*",
+              "sourceAddressPrefixes": [],
+              "sourcePortRange": "*",
+              "sourcePortRanges": []
+            },
+            "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+          },
+          {
+            "etag": "W/\"758d8aa1-5ae8-46a9-8996-31f2861a7998\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-runner/defaultSecurityRules/DenyAllOutBound",
+            "name": "DenyAllOutBound",
+            "properties": {
+              "access": "Deny",
+              "description": "Deny all outbound traffic",
+              "destinationAddressPrefix": "*",
+              "destinationAddressPrefixes": [],
+              "destinationPortRange": "*",
+              "destinationPortRanges": [],
+              "direction": "Outbound",
+              "priority": 65500,
+              "protocol": "*",
+              "provisioningState": "Succeeded",
+              "sourceAddressPrefix": "*",
+              "sourceAddressPrefixes": [],
+              "sourcePortRange": "*",
+              "sourcePortRanges": []
+            },
+            "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules"
+          }
+        ],
+        "securityRules": [
+          {
+            "etag": "W/\"758d8aa1-5ae8-46a9-8996-31f2861a7998\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-runner/securityRules/Allow-SSH-VNet",
+            "name": "Allow-SSH-VNet",
+            "properties": {
+              "access": "Allow",
+              "description": "Allow SSH from VNet",
+              "destinationAddressPrefix": "*",
+              "destinationAddressPrefixes": [],
+              "destinationPortRange": "22",
+              "destinationPortRanges": [],
+              "direction": "Inbound",
+              "priority": 100,
+              "protocol": "Tcp",
+              "provisioningState": "Succeeded",
+              "sourceAddressPrefix": "VirtualNetwork",
+              "sourceAddressPrefixes": [],
+              "sourcePortRange": "*",
+              "sourcePortRanges": []
+            },
+            "type": "Microsoft.Network/networkSecurityGroups/securityRules"
+          }
+        ]
+      }
+    }
+  ],
+  "outputs": {}
+}

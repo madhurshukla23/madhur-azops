@@ -11,7 +11,7 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "rg-azugwc-aib-runners01",
+      "name": "rg-azugwc-aib-cicd-01",
       "apiVersion": "2023-07-01",
       "location": "germanywestcentral",
       "tags": {

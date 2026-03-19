@@ -1,0 +1,80 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Network/virtualNetworks",
+      "name": "vnet-azugwc-aib-hub-prd-01",
+      "apiVersion": "2025-05-01",
+      "location": "germanywestcentral",
+      "tags": {
+        "environment": "prod",
+        "managed_by": "omotayo.aina@vodafone.com",
+        "platform": "AIB3",
+        "purpose": "ConnectionHub",
+        "region": "GWC"
+      },
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.60.0.0/16"
+          ]
+        },
+        "enableDdosProtection": false,
+        "privateEndpointVNetPolicies": "Disabled",
+        "subnets": [
+          {
+            "etag": "W/\"2e1d5b94-37e6-4e47-9755-43d5576e3e51\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/virtualNetworks/vnet-azugwc-aib-hub-prd-01/subnets/snet-runner",
+            "name": "snet-runner",
+            "properties": {
+              "addressPrefix": "10.60.2.0/24",
+              "delegations": [],
+              "privateEndpointNetworkPolicies": "Disabled",
+              "privateLinkServiceNetworkPolicies": "Enabled",
+              "provisioningState": "Succeeded",
+              "serviceEndpoints": []
+            },
+            "type": "Microsoft.Network/virtualNetworks/subnets"
+          },
+          {
+            "etag": "W/\"2e1d5b94-37e6-4e47-9755-43d5576e3e51\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/virtualNetworks/vnet-azugwc-aib-hub-prd-01/subnets/AzureBastionSubnet",
+            "name": "AzureBastionSubnet",
+            "properties": {
+              "addressPrefix": "10.60.3.0/26",
+              "delegations": [],
+              "privateEndpointNetworkPolicies": "Enabled",
+              "privateLinkServiceNetworkPolicies": "Enabled",
+              "provisioningState": "Succeeded",
+              "serviceEndpoints": []
+            },
+            "type": "Microsoft.Network/virtualNetworks/subnets"
+          },
+          {
+            "etag": "W/\"2e1d5b94-37e6-4e47-9755-43d5576e3e51\"",
+            "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/virtualNetworks/vnet-azugwc-aib-hub-prd-01/subnets/snet-pe",
+            "name": "snet-pe",
+            "properties": {
+              "addressPrefix": "10.60.1.0/24",
+              "delegations": [],
+              "privateEndpointNetworkPolicies": "Disabled",
+              "privateLinkServiceNetworkPolicies": "Enabled",
+              "provisioningState": "Succeeded"
+            },
+            "type": "Microsoft.Network/virtualNetworks/subnets"
+          }
+        ],
+        "virtualNetworkPeerings": []
+      }
+    }
+  ],
+  "outputs": {}
+}
