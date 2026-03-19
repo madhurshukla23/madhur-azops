@@ -1,0 +1,94 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.KeyVault/vaults",
+      "name": "kv-azugwc-aib-prd-01",
+      "apiVersion": "2026-02-01",
+      "location": "germanywestcentral",
+      "tags": {
+        "environment": "prod",
+        "managed_by": "omotayo.aina@vodafone.com",
+        "platform": "AIB3",
+        "purpose": "ConnectionHub",
+        "region": "GWC"
+      },
+      "properties": {
+        "accessPolicies": [
+          {
+            "objectId": "2e53abfb-2a46-4e2c-a56c-eb2d63d32924",
+            "permissions": {
+              "certificates": [
+                "get",
+                "delete",
+                "list",
+                "create",
+                "import",
+                "update",
+                "deleteissuers",
+                "getissuers",
+                "listissuers",
+                "managecontacts",
+                "manageissuers",
+                "setissuers",
+                "recover",
+                "backup",
+                "restore"
+              ],
+              "keys": [
+                "all"
+              ],
+              "secrets": [
+                "get",
+                "list",
+                "set",
+                "delete",
+                "backup",
+                "restore",
+                "recover"
+              ],
+              "storage": [
+                "delete",
+                "deletesas",
+                "get",
+                "getsas",
+                "list",
+                "listsas",
+                "regeneratekey",
+                "set",
+                "setsas",
+                "update",
+                "recover",
+                "backup",
+                "restore"
+              ]
+            },
+            "tenantId": "6a193f19-5358-4072-8b3e-1dadda287cd1"
+          }
+        ],
+        "enableRbacAuthorization": true,
+        "enableSoftDelete": true,
+        "enabledForDeployment": false,
+        "enabledForDiskEncryption": false,
+        "enabledForTemplateDeployment": false,
+        "publicNetworkAccess": "Disabled",
+        "sku": {
+          "family": "A",
+          "name": "standard"
+        },
+        "softDeleteRetentionInDays": 7,
+        "tenantId": "6a193f19-5358-4072-8b3e-1dadda287cd1",
+        "vaultUri": "https://kv-azugwc-aib-prd-01.vault.azure.net/"
+      }
+    }
+  ],
+  "outputs": {}
+}
