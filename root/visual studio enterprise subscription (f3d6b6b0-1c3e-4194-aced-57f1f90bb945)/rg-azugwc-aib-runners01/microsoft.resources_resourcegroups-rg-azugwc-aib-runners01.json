@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "name": "rg-azugwc-aib-runners01",
+      "apiVersion": "2023-07-01",
+      "location": "germanywestcentral",
+      "tags": {
+        "environment": "prod",
+        "managed_by": "omotayo.aina@vodafone.com",
+        "platform": "AIB3",
+        "purpose": "ConnectionHub",
+        "region": "GWC"
+      },
+      "properties": {}
+    }
+  ],
+  "outputs": {}
+}
