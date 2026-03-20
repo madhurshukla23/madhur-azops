@@ -13,7 +13,7 @@
       "type": "Microsoft.Network/networkInterfaces",
       "name": "pe-stgwazugwcaibcicdprd001.nic.c0511f1b-c5a7-45f5-8ddf-dbe5731bf98f",
       "kind": "Regular",
-      "apiVersion": "2025-05-01",
+      "apiVersion": "2024-10-01",
       "location": "germanywestcentral",
       "tags": {
         "environment": "prod",
@@ -38,7 +38,7 @@
         "hostedWorkloads": [],
         "ipConfigurations": [
           {
-            "etag": "W/\"d0a9a9f7-14f6-4b95-bc99-322eb8afe9d0\"",
+            "etag": "W/\"ad014e90-3759-4263-aad2-76b3cbb42683\"",
             "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/networkInterfaces/pe-stgwazugwcaibcicdprd001.nic.c0511f1b-c5a7-45f5-8ddf-dbe5731bf98f/ipConfigurations/privateEndpointIpConfig.f14f07d7-3401-4f74-871a-6adadf402a16",
             "name": "privateEndpointIpConfig.f14f07d7-3401-4f74-871a-6adadf402a16",
             "properties": {
@@ -47,9 +47,7 @@
               "privateIPAddressVersion": "IPv4",
               "privateIPAllocationMethod": "Dynamic",
               "privateLinkConnectionProperties": {
-                "fqdns": [
-                  "stgwazugwcaibcicdprd001.blob.core.windows.net"
-                ],
+                "fqdns": [],
                 "groupId": "blob",
                 "requiredMemberName": "blob"
               },
