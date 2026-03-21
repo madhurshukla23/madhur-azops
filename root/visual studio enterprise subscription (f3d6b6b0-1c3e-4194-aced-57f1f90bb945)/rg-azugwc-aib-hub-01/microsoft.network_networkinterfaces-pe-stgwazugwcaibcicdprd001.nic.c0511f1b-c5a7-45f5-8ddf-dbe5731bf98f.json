@@ -13,7 +13,7 @@
       "type": "Microsoft.Network/networkInterfaces",
       "name": "pe-stgwazugwcaibcicdprd001.nic.c0511f1b-c5a7-45f5-8ddf-dbe5731bf98f",
       "kind": "Regular",
-      "apiVersion": "2024-10-01",
+      "apiVersion": "2025-05-01",
       "location": "germanywestcentral",
       "tags": {
         "environment": "prod",

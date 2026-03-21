@@ -31,7 +31,7 @@
         "privateEndpointVNetPolicies": "Disabled",
         "subnets": [
           {
-            "etag": "W/\"f7387bda-c0e8-474d-be29-7adea65389db\"",
+            "etag": "W/\"092ac703-08a5-47ca-9ec1-a9004cda3efc\"",
             "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/virtualNetworks/vnet-azugwc-aib-hub-prd-01/subnets/snet-runner",
             "name": "snet-runner",
             "properties": {
@@ -45,7 +45,7 @@
             "type": "Microsoft.Network/virtualNetworks/subnets"
           },
           {
-            "etag": "W/\"f7387bda-c0e8-474d-be29-7adea65389db\"",
+            "etag": "W/\"092ac703-08a5-47ca-9ec1-a9004cda3efc\"",
             "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/virtualNetworks/vnet-azugwc-aib-hub-prd-01/subnets/AzureBastionSubnet",
             "name": "AzureBastionSubnet",
             "properties": {
@@ -59,7 +59,7 @@
             "type": "Microsoft.Network/virtualNetworks/subnets"
           },
           {
-            "etag": "W/\"f7387bda-c0e8-474d-be29-7adea65389db\"",
+            "etag": "W/\"092ac703-08a5-47ca-9ec1-a9004cda3efc\"",
             "id": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-azugwc-aib-hub-01/providers/Microsoft.Network/virtualNetworks/vnet-azugwc-aib-hub-prd-01/subnets/snet-pe",
             "name": "snet-pe",
             "properties": {
