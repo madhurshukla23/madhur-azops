@@ -10,7 +10,7 @@
   "variables": {},
   "resources": [
     {
-      "apiVersion": "2024-07-01",
+      "apiVersion": "2025-05-01",
       "name": "pe-stgwazugwcaibcicdprd001/zonegroup-stgwazugwcaibcicdprd001",
       "properties": {
         "privateDnsZoneConfigs": [
