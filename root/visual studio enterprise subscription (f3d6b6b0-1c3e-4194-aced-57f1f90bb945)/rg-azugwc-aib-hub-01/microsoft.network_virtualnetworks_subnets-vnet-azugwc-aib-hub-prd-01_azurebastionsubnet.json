@@ -10,7 +10,7 @@
   "variables": {},
   "resources": [
     {
-      "apiVersion": "2024-07-01",
+      "apiVersion": "2025-05-01",
       "name": "vnet-azugwc-aib-hub-prd-01/AzureBastionSubnet",
       "properties": {
         "addressPrefix": "10.60.3.0/26",
