@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.insights/components",
+      "name": "insights-app-insights",
+      "kind": "web",
+      "apiVersion": "2020-02-02",
+      "location": "centralus",
+      "tags": {},
+      "properties": {
+        "AppId": "dbb20d00-5bfe-43ea-b419-d32941d09f2e",
+        "ApplicationId": "insights-app-insights",
+        "Application_Type": "web",
+        "ConnectionString": "InstrumentationKey=b7fd7362-e9fa-4e60-9505-a6fb57fc0154;IngestionEndpoint=https://centralus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://centralus.livediagnostics.monitor.azure.com/;ApplicationId=dbb20d00-5bfe-43ea-b419-d32941d09f2e",
+        "Flow_Type": "Redfield",
+        "IngestionMode": "LogAnalytics",
+        "InstrumentationKey": "b7fd7362-e9fa-4e60-9505-a6fb57fc0154",
+        "Name": "insights-app-insights",
+        "Request_Source": "IbizaAIExtension",
+        "RetentionInDays": 90,
+        "TenantId": "f3d6b6b0-1c3e-4194-aced-57f1f90bb945",
+        "Ver": "v2",
+        "WorkspaceResourceId": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourcegroups/DefaultResourceGroup-CUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-f3d6b6b0-1c3e-4194-aced-57f1f90bb945-CUS",
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled"
+      }
+    }
+  ],
+  "outputs": {}
+}
