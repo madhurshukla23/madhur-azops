@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-10-01-preview",
+      "name": "insights-agent-madlab1--resource/gpt-4.1",
+      "properties": {
+        "currentCapacity": 150,
+        "deploymentState": "Running",
+        "model": {
+          "format": "OpenAI",
+          "name": "gpt-4.1",
+          "version": "2025-04-14"
+        },
+        "raiPolicyName": "Microsoft.DefaultV2",
+        "serviceTier": "Default",
+        "versionUpgradeOption": "OnceNewDefaultVersionAvailable"
+      },
+      "sku": {
+        "capacity": 150,
+        "name": "GlobalStandard"
+      },
+      "type": "Microsoft.CognitiveServices/accounts/deployments"
+    }
+  ],
+  "outputs": {}
+}
