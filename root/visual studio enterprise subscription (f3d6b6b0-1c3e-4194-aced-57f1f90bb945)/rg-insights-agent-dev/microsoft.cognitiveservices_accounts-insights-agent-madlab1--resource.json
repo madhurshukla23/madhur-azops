@@ -1554,6 +1554,42 @@
               "renewalPeriod": 10
             },
             {
+              "count": 200,
+              "dynamicThrottlingEnabled": true,
+              "key": "ContentSafety.Provenance.CreateAsyncJob",
+              "matchPatterns": [
+                {
+                  "method": "POST",
+                  "path": "contentsafety/provenance/jobs"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 200,
+              "dynamicThrottlingEnabled": true,
+              "key": "ContentSafety.Provenance.ListAsyncJobs",
+              "matchPatterns": [
+                {
+                  "method": "GET",
+                  "path": "contentsafety/provenance/jobs"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
+              "count": 200,
+              "dynamicThrottlingEnabled": true,
+              "key": "ContentSafety.Provenance.GetAsyncJobStatus",
+              "matchPatterns": [
+                {
+                  "method": "GET",
+                  "path": "contentsafety/provenance/jobs/*"
+                }
+              ],
+              "renewalPeriod": 10
+            },
+            {
               "count": 15,
               "key": "contentunderstanding.analyze",
               "matchPatterns": [
