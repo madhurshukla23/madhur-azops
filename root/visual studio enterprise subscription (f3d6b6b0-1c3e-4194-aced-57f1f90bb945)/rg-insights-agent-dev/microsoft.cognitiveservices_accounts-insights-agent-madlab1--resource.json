@@ -1892,7 +1892,7 @@
               "renewalPeriod": 1
             },
             {
-              "count": 100000,
+              "count": 4000,
               "key": "openai.assistants.default",
               "matchPatterns": [
                 {
@@ -1920,7 +1920,7 @@
                   "path": "openai/vector_stores/*"
                 }
               ],
-              "renewalPeriod": 1
+              "renewalPeriod": 60
             },
             {
               "count": 100000,
