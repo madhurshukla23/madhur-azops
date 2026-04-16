@@ -1892,7 +1892,7 @@
               "renewalPeriod": 1
             },
             {
-              "count": 4000,
+              "count": 6000,
               "key": "openai.assistants.default",
               "matchPatterns": [
                 {
@@ -2171,6 +2171,7 @@
           "OpenAI Model Scaleset API": "https://insights-agent-madlab1--resource.openai.azure.com/",
           "OpenAI Moderations API": "https://insights-agent-madlab1--resource.openai.azure.com/",
           "OpenAI Realtime API": "https://insights-agent-madlab1--resource.openai.azure.com/",
+          "OpenAI Response API on Websocket": "https://insights-agent-madlab1--resource.openai.azure.com/",
           "OpenAI Sora API": "https://insights-agent-madlab1--resource.openai.azure.com/",
           "OpenAI Whisper API": "https://insights-agent-madlab1--resource.openai.azure.com/",
           "ProjectA APIs": "https://insights-agent-madlab1--resource.cognitiveservices.azure.com/",
