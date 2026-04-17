@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-10-01-preview",
+      "name": "foundypz6m/projectpz6m/pz6mcosmosdb",
+      "properties": {
+        "authType": "AAD",
+        "category": "CosmosDb",
+        "isSharedToAll": false,
+        "metadata": {
+          "ApiType": "Azure",
+          "ResourceId": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-insights-api-dev/providers/Microsoft.DocumentDB/databaseAccounts/pz6mcosmosdb",
+          "location": "Germany West Central"
+        },
+        "peRequirement": "NotRequired",
+        "peStatus": "NotApplicable",
+        "sharedUserList": [],
+        "target": "https://pz6mcosmosdb.documents.azure.com:443/",
+        "useWorkspaceManagedIdentity": false
+      },
+      "type": "Microsoft.CognitiveServices/accounts/projects/connections"
+    }
+  ],
+  "outputs": {}
+}

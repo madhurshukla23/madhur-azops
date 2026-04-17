@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-11-01-preview",
+      "name": "pz6mcosmosdb/c040b329-2eab-571a-982f-065d14e75c21",
+      "properties": {
+        "principalId": "8c88e54b-e836-4866-9c1c-2897fe85b6b9",
+        "roleDefinitionId": "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlRoleDefinitions', 'pz6mcosmosdb', '00000000-0000-0000-0000-000000000002')]",
+        "scope": "[concat(resourceId('Microsoft.DocumentDB/databaseAccounts', 'pz6mcosmosdb'), '/dbs/enterprise_memory')]"
+      },
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments"
+    }
+  ],
+  "outputs": {}
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.CognitiveServices/accounts/projects",
+      "name": "foundypz6m/projectpz6m",
+      "kind": "AIServices",
+      "apiVersion": "2025-12-01",
+      "location": "germanywestcentral",
+      "identity": {
+        "principalId": "8c88e54b-e836-4866-9c1c-2897fe85b6b9",
+        "tenantId": "6a193f19-5358-4072-8b3e-1dadda287cd1",
+        "type": "SystemAssigned"
+      },
+      "properties": {
+        "description": "some description",
+        "displayName": "project",
+        "endpoints": {
+          "AI Foundry API": "https://foundypz6m.services.ai.azure.com/api/projects/projectpz6m"
+        },
+        "internalId": "5dd21ea6bb3b49c99c36b5815f970b5c",
+        "isDefault": true
+      }
+    }
+  ],
+  "outputs": {}
+}
