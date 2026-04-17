@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.insights/components",
+      "name": "pz6minsights",
+      "kind": "web",
+      "apiVersion": "2020-02-02",
+      "location": "germanywestcentral",
+      "tags": {},
+      "properties": {
+        "AppId": "8755e692-b961-4dff-ba42-097e4146f15d",
+        "ApplicationId": "pz6minsights",
+        "Application_Type": "web",
+        "ConnectionString": "InstrumentationKey=5c209284-c9ea-4f07-96b1-72bcd6351ffc;IngestionEndpoint=https://germanywestcentral-1.in.applicationinsights.azure.com/;LiveEndpoint=https://germanywestcentral.livediagnostics.monitor.azure.com/;ApplicationId=8755e692-b961-4dff-ba42-097e4146f15d",
+        "Flow_Type": "Bluefield",
+        "IngestionMode": "LogAnalytics",
+        "InstrumentationKey": "5c209284-c9ea-4f07-96b1-72bcd6351ffc",
+        "Name": "pz6minsights",
+        "Request_Source": "rest",
+        "RetentionInDays": 90,
+        "TenantId": "f3d6b6b0-1c3e-4194-aced-57f1f90bb945",
+        "Ver": "v2",
+        "WorkspaceResourceId": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-insights-api-dev/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-91d7d6a6-68bf-4d3d-8c4e-10f16341078b",
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled"
+      }
+    }
+  ],
+  "outputs": {}
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "name": "stinsightscentral",
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "kind": "StorageV2",
+      "apiVersion": "2025-08-01",
+      "location": "germanywestcentral",
+      "tags": {},
+      "properties": {
+        "accessTier": "Hot",
+        "allowBlobPublicAccess": false,
+        "allowCrossTenantDelegationSas": false,
+        "allowCrossTenantReplication": false,
+        "encryption": {
+          "keySource": "Microsoft.Storage",
+          "services": {
+            "blob": {
+              "enabled": true,
+              "keyType": "Account"
+            },
+            "file": {
+              "enabled": true,
+              "keyType": "Account"
+            }
+          }
+        },
+        "keyCreationTime": {},
+        "minimumTlsVersion": "TLS1_0",
+        "networkAcls": {
+          "bypass": "AzureServices",
+          "defaultAction": "Allow",
+          "ipRules": [],
+          "ipv6Rules": [],
+          "virtualNetworkRules": []
+        },
+        "primaryEndpoints": {
+          "blob": "https://stinsightscentral.blob.core.windows.net/",
+          "dfs": "https://stinsightscentral.dfs.core.windows.net/",
+          "file": "https://stinsightscentral.file.core.windows.net/",
+          "queue": "https://stinsightscentral.queue.core.windows.net/",
+          "table": "https://stinsightscentral.table.core.windows.net/",
+          "web": "https://stinsightscentral.z1.web.core.windows.net/"
+        },
+        "primaryLocation": "germanywestcentral",
+        "privateEndpointConnections": [],
+        "statusOfPrimary": "available",
+        "supportsHttpsTrafficOnly": true
+      }
+    }
+  ],
+  "outputs": {}
+}

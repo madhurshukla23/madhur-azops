@@ -1,0 +1,110 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-07-01",
+      "name": "workspace-rginsightsapidevKdSa/ContainerAppSystemLogs_CL",
+      "properties": {
+        "plan": "Analytics",
+        "retentionInDays": 30,
+        "schema": {
+          "columns": [
+            {
+              "displayName": "time_t",
+              "name": "time_t",
+              "type": "datetime"
+            },
+            {
+              "displayName": "_timestamp_d",
+              "name": "_timestamp_d",
+              "type": "real"
+            },
+            {
+              "displayName": "EnvironmentName_s",
+              "name": "EnvironmentName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "time_s",
+              "name": "time_s",
+              "type": "string"
+            },
+            {
+              "displayName": "Level",
+              "name": "Level",
+              "type": "string"
+            },
+            {
+              "displayName": "ExecutionName_s",
+              "name": "ExecutionName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "TimeStamp_s",
+              "name": "TimeStamp_s",
+              "type": "string"
+            },
+            {
+              "displayName": "Type_s",
+              "name": "Type_s",
+              "type": "string"
+            },
+            {
+              "displayName": "EventSource_s",
+              "name": "EventSource_s",
+              "type": "string"
+            },
+            {
+              "displayName": "ContainerAppName_s",
+              "name": "ContainerAppName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "Log_s",
+              "name": "Log_s",
+              "type": "string"
+            },
+            {
+              "displayName": "RevisionName_s",
+              "name": "RevisionName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "ReplicaName_s",
+              "name": "ReplicaName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "JobName_s",
+              "name": "JobName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "Reason_s",
+              "name": "Reason_s",
+              "type": "string"
+            },
+            {
+              "displayName": "Count_d",
+              "name": "Count_d",
+              "type": "real"
+            }
+          ],
+          "displayName": "ContainerAppSystemLogs_CL",
+          "name": "ContainerAppSystemLogs_CL"
+        },
+        "totalRetentionInDays": 30
+      },
+      "type": "Microsoft.OperationalInsights/workspaces/tables"
+    }
+  ],
+  "outputs": {}
+}
