@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-11-01",
+      "name": "crinsightsagent/_repositories_pull_metadata_read",
+      "properties": {
+        "actions": [
+          "repositories/*/content/read",
+          "repositories/*/metadata/read"
+        ],
+        "description": "Can perform all read operations on the registry"
+      },
+      "type": "Microsoft.ContainerRegistry/registries/scopeMaps"
+    }
+  ],
+  "outputs": {}
+}

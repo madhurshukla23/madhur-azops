@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-11-01",
+      "name": "crinsightsagent/_repositories_push_metadata_write",
+      "properties": {
+        "actions": [
+          "repositories/*/metadata/read",
+          "repositories/*/metadata/write",
+          "repositories/*/content/read",
+          "repositories/*/content/write"
+        ],
+        "description": "Can perform all read and write operations on the registry"
+      },
+      "type": "Microsoft.ContainerRegistry/registries/scopeMaps"
+    }
+  ],
+  "outputs": {}
+}

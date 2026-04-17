@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.OperationalInsights/workspaces",
+      "name": "workspace-rginsightsapidevKdSa",
+      "apiVersion": "2025-02-01",
+      "location": "germanywestcentral",
+      "properties": {
+        "customerId": "af31f929-5aa4-4e63-9f3b-fcf5398c5278",
+        "features": {
+          "enableLogAccessUsingOnlyResourcePermissions": true,
+          "legacy": 0,
+          "searchVersion": 1
+        },
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled",
+        "retentionInDays": 30,
+        "sku": {
+          "name": "PerGB2018"
+        },
+        "workspaceCapping": {
+          "dailyQuotaGb": -1.0,
+          "dataIngestionStatus": "RespectQuota"
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}

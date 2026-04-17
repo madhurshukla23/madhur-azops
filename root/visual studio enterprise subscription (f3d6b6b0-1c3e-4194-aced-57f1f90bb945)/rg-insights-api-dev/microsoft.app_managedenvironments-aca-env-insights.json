@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.App/managedEnvironments",
+      "name": "aca-env-insights",
+      "apiVersion": "2024-02-02-preview",
+      "location": "germanywestcentral",
+      "properties": {
+        "appLogsConfiguration": {
+          "destination": "log-analytics",
+          "logAnalyticsConfiguration": {
+            "customerId": "af31f929-5aa4-4e63-9f3b-fcf5398c5278",
+            "dynamicJsonColumns": false
+          }
+        },
+        "customDomainConfiguration": {
+          "customDomainVerificationId": "431D88AD2D2094745752125FD03BFB72FF5B96CB32FB3A5723A5AC718BD8171D"
+        },
+        "daprConfiguration": {
+          "version": "1.16.4-msft.2"
+        },
+        "defaultDomain": "wittysky-a9f80220.germanywestcentral.azurecontainerapps.io",
+        "eventStreamEndpoint": "https://germanywestcentral.azurecontainerapps.dev/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-insights-api-dev/managedEnvironments/aca-env-insights/eventstream",
+        "kedaConfiguration": {
+          "version": "2.17.2"
+        },
+        "peerAuthentication": {
+          "mtls": {
+            "enabled": false
+          }
+        },
+        "peerTrafficConfiguration": {
+          "encryption": {
+            "enabled": false
+          }
+        },
+        "publicNetworkAccess": "Enabled",
+        "staticIp": "131.189.150.159",
+        "workloadProfiles": [
+          {
+            "name": "Consumption",
+            "workloadProfileType": "Consumption"
+          }
+        ],
+        "zoneRedundant": false
+      }
+    }
+  ],
+  "outputs": {}
+}

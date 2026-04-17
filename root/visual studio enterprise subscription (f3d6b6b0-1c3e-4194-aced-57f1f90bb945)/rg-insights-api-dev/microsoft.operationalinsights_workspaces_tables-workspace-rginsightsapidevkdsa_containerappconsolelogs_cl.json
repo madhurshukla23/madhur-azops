@@ -1,0 +1,95 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-07-01",
+      "name": "workspace-rginsightsapidevKdSa/ContainerAppConsoleLogs_CL",
+      "properties": {
+        "plan": "Analytics",
+        "retentionInDays": 30,
+        "schema": {
+          "columns": [
+            {
+              "displayName": "_timestamp_d",
+              "name": "_timestamp_d",
+              "type": "real"
+            },
+            {
+              "displayName": "ContainerName_s",
+              "name": "ContainerName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "Log_s",
+              "name": "Log_s",
+              "type": "string"
+            },
+            {
+              "displayName": "ContainerId_g",
+              "name": "ContainerId_g",
+              "type": "guid"
+            },
+            {
+              "displayName": "RevisionName_s",
+              "name": "RevisionName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "ContainerAppName_s",
+              "name": "ContainerAppName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "EnvironmentName_s",
+              "name": "EnvironmentName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "time_t",
+              "name": "time_t",
+              "type": "datetime"
+            },
+            {
+              "displayName": "ContainerGroupName_s",
+              "name": "ContainerGroupName_s",
+              "type": "string"
+            },
+            {
+              "displayName": "ContainerImage_s",
+              "name": "ContainerImage_s",
+              "type": "string"
+            },
+            {
+              "displayName": "Stream_s",
+              "name": "Stream_s",
+              "type": "string"
+            },
+            {
+              "displayName": "Category",
+              "name": "Category",
+              "type": "string"
+            },
+            {
+              "displayName": "ContainerGroupId_g",
+              "name": "ContainerGroupId_g",
+              "type": "guid"
+            }
+          ],
+          "displayName": "ContainerAppConsoleLogs_CL",
+          "name": "ContainerAppConsoleLogs_CL"
+        },
+        "totalRetentionInDays": 30
+      },
+      "type": "Microsoft.OperationalInsights/workspaces/tables"
+    }
+  ],
+  "outputs": {}
+}
