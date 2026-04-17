@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-10-01-preview",
+      "name": "foundypz6m/pz6msearch",
+      "properties": {
+        "authType": "AAD",
+        "category": "CognitiveSearch",
+        "isSharedToAll": false,
+        "metadata": {
+          "ApiType": "Azure",
+          "ApiVersion": "2024-05-01-preview",
+          "DeploymentApiVersion": "2023-11-01",
+          "ResourceId": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-insights-api-dev/providers/Microsoft.Search/searchServices/pz6msearch",
+          "location": "Germany West Central"
+        },
+        "peRequirement": "NotRequired",
+        "peStatus": "NotApplicable",
+        "sharedUserList": [],
+        "target": "https://pz6msearch.search.windows.net",
+        "useWorkspaceManagedIdentity": false
+      },
+      "type": "Microsoft.CognitiveServices/accounts/connections"
+    }
+  ],
+  "outputs": {}
+}

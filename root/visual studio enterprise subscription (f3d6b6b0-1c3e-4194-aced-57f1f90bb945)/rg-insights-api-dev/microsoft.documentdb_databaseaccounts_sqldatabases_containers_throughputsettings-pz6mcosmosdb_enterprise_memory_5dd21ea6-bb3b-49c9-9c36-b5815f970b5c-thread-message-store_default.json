@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-11-01-preview",
+      "name": "pz6mcosmosdb/enterprise_memory/5dd21ea6-bb3b-49c9-9c36-b5815f970b5c-thread-message-store/default",
+      "properties": {
+        "resource": {
+          "autoscaleSettings": {
+            "maxThroughput": 1000
+          },
+          "throughput": 100
+        }
+      },
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/throughputSettings"
+    }
+  ],
+  "outputs": {}
+}

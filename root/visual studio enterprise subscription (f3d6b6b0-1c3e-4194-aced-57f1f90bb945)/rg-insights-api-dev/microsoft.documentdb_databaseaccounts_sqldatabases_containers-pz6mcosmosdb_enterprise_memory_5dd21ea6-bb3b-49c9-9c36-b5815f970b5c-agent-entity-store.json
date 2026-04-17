@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-11-01-preview",
+      "name": "pz6mcosmosdb/enterprise_memory/5dd21ea6-bb3b-49c9-9c36-b5815f970b5c-agent-entity-store",
+      "properties": {
+        "resource": {
+          "computedProperties": [],
+          "conflictResolutionPolicy": {
+            "conflictResolutionPath": "/_ts",
+            "mode": "LastWriterWins"
+          },
+          "defaultTtl": -1,
+          "id": "5dd21ea6-bb3b-49c9-9c36-b5815f970b5c-agent-entity-store",
+          "indexingPolicy": {
+            "automatic": true,
+            "excludedPaths": [
+              {
+                "path": "/\"_etag\"/?"
+              }
+            ],
+            "fullTextIndexes": [],
+            "includedPaths": [
+              {
+                "path": "/*"
+              }
+            ],
+            "indexingMode": "consistent"
+          },
+          "partitionKey": {
+            "kind": "Hash",
+            "paths": [
+              "/partition_key_value"
+            ]
+          },
+          "uniqueKeyPolicy": {
+            "uniqueKeys": []
+          }
+        }
+      },
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+    }
+  ],
+  "outputs": {}
+}

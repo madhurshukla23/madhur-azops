@@ -1,0 +1,109 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-10-01-preview",
+      "name": "foundypz6m/Microsoft.DefaultV2",
+      "properties": {
+        "contentFilters": [
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Hate",
+            "severityThreshold": "Medium",
+            "source": "Prompt"
+          },
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Hate",
+            "severityThreshold": "Medium",
+            "source": "Completion"
+          },
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Sexual",
+            "severityThreshold": "Medium",
+            "source": "Prompt"
+          },
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Sexual",
+            "severityThreshold": "Medium",
+            "source": "Completion"
+          },
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Violence",
+            "severityThreshold": "Medium",
+            "source": "Prompt"
+          },
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Violence",
+            "severityThreshold": "Medium",
+            "source": "Completion"
+          },
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Selfharm",
+            "severityThreshold": "Medium",
+            "source": "Prompt"
+          },
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Selfharm",
+            "severityThreshold": "Medium",
+            "source": "Completion"
+          },
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Jailbreak",
+            "source": "Prompt"
+          },
+          {
+            "action": "NONE",
+            "blocking": true,
+            "enabled": true,
+            "name": "Protected Material Text",
+            "source": "Completion"
+          },
+          {
+            "action": "NONE",
+            "blocking": false,
+            "enabled": true,
+            "name": "Protected Material Code",
+            "source": "Completion"
+          }
+        ],
+        "mode": "Blocking"
+      },
+      "type": "Microsoft.CognitiveServices/accounts/raiPolicies"
+    }
+  ],
+  "outputs": {}
+}

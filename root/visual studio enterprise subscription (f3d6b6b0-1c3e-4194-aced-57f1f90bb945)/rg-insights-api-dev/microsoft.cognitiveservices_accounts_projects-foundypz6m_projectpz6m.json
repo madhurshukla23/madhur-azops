@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-10-01-preview",
+      "identity": {
+        "type": "SystemAssigned"
+      },
+      "kind": "AIServices",
+      "location": "germanywestcentral",
+      "name": "foundypz6m/projectpz6m",
+      "properties": {
+        "description": "some description",
+        "displayName": "project"
+      },
+      "type": "Microsoft.CognitiveServices/accounts/projects"
+    }
+  ],
+  "outputs": {}
+}
