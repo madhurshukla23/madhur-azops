@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "d7b58209-7245-47cc-99f6-613fdfa1b7bb",
+      "apiVersion": "2022-04-01",
+      "properties": {
+        "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'} AND @Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAllValues:GuidNotEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, 0a9a7e1f-b9d0-4cc4-a60d-0319b160aaa3, 974c5e8b-45b9-4653-ba55-5f855dd0fb88}) AND !(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'} AND @Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAllValues:GuidNotEquals {ba92f5b4-2d11-453d-a403-e96b0029c9fe, 0a9a7e1f-b9d0-4cc4-a60d-0319b160aaa3, 974c5e8b-45b9-4653-ba55-5f855dd0fb88})))",
+        "conditionVersion": "2.0",
+        "principalId": "1a8ed926-29e4-4b81-ba92-d257dba14caf",
+        "principalType": "ServicePrincipal",
+        "roleDefinitionId": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/providers/Microsoft.Authorization/roleDefinitions/f58310d9-a9f6-439a-9e8d-f62e7b41a168",
+        "scope": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-insights-api-dev"
+      }
+    }
+  ],
+  "outputs": {}
+}
