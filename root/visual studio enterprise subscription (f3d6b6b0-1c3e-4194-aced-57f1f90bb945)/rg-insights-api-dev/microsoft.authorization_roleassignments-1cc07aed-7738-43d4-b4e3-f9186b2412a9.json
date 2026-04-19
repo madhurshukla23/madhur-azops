@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "1cc07aed-7738-43d4-b4e3-f9186b2412a9",
+      "apiVersion": "2022-04-01",
+      "properties": {
+        "principalId": "db621d01-d6a4-4436-a2ae-c4858ce49944",
+        "principalType": "ServicePrincipal",
+        "roleDefinitionId": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/providers/Microsoft.Authorization/roleDefinitions/acdd72a7-3385-48ef-bd42-f606fba81ae7",
+        "scope": "/subscriptions/f3d6b6b0-1c3e-4194-aced-57f1f90bb945/resourceGroups/rg-insights-api-dev"
+      }
+    }
+  ],
+  "outputs": {}
+}
