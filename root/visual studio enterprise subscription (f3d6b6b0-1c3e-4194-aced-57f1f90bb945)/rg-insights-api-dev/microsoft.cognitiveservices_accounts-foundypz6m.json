@@ -16,7 +16,7 @@
         "name": "S0"
       },
       "kind": "AIServices",
-      "apiVersion": "2025-12-01",
+      "apiVersion": "2026-03-01",
       "location": "germanywestcentral",
       "identity": {
         "principalId": "42fc699d-5b70-4c6e-86a7-9e3ec813ad97",
