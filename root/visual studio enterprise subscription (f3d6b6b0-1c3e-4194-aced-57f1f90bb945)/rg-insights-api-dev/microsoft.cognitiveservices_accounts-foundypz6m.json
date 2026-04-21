@@ -2165,6 +2165,7 @@
           "LUIS": "https://foundypz6m.cognitiveservices.azure.com/",
           "Language": "https://foundypz6m.cognitiveservices.azure.com/",
           "Language Remote MCP Server": "https://foundypz6m.cognitiveservices.azure.com/",
+          "MAAP Managed Deployments API": "https://foundypz6m.cognitiveservices.azure.com/",
           "Mistral AI API": "https://foundypz6m.services.ai.azure.com/",
           "OpenAI Dall-E API": "https://foundypz6m.openai.azure.com/",
           "OpenAI Language Model Instance API": "https://foundypz6m.openai.azure.com/",
