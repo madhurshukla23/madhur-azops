@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.App/containerApps",
       "name": "migration-cockpit",
-      "apiVersion": "2024-02-02-preview",
+      "apiVersion": "2025-10-02-preview",
       "location": "germanywestcentral",
       "identity": {
         "principalId": "1a8ed926-29e4-4b81-ba92-d257dba14caf",
@@ -278,8 +278,10 @@
             }
           ],
           "scale": {
+            "cooldownPeriod": 300,
             "maxReplicas": 3,
-            "minReplicas": 1
+            "minReplicas": 1,
+            "pollingInterval": 30
           }
         },
         "workloadProfileName": "Consumption"

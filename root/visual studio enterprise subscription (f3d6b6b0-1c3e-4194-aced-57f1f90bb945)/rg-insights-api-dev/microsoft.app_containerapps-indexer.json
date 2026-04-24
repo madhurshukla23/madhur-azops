@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.App/containerApps",
       "name": "indexer",
-      "apiVersion": "2024-02-02-preview",
+      "apiVersion": "2025-10-02-preview",
       "location": "germanywestcentral",
       "identity": {
         "principalId": "adbb0ce8-4360-4bb9-96f8-5c84263d1a0b",
@@ -289,8 +289,10 @@
             }
           ],
           "scale": {
+            "cooldownPeriod": 300,
             "maxReplicas": 3,
-            "minReplicas": 1
+            "minReplicas": 1,
+            "pollingInterval": 30
           }
         },
         "workloadProfileName": "Consumption"
