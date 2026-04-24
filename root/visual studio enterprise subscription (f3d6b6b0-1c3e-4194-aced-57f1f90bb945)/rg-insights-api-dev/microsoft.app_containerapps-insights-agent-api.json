@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.App/containerApps",
       "name": "insights-agent-api",
-      "apiVersion": "2024-02-02-preview",
+      "apiVersion": "2025-10-02-preview",
       "location": "germanywestcentral",
       "identity": {
         "principalId": "db621d01-d6a4-4436-a2ae-c4858ce49944",
@@ -341,8 +341,10 @@
             }
           ],
           "scale": {
+            "cooldownPeriod": 300,
             "maxReplicas": 10,
-            "minReplicas": 1
+            "minReplicas": 1,
+            "pollingInterval": 30
           }
         },
         "workloadProfileName": "Consumption"

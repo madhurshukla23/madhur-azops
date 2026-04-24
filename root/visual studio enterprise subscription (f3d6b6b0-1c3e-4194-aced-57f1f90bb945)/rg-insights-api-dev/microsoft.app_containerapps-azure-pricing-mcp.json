@@ -12,7 +12,7 @@
     {
       "type": "Microsoft.App/containerApps",
       "name": "azure-pricing-mcp",
-      "apiVersion": "2024-02-02-preview",
+      "apiVersion": "2025-10-02-preview",
       "location": "germanywestcentral",
       "identity": {
         "principalId": "e6818e94-6527-4fd6-b7a2-d12fbec95d31",
@@ -231,8 +231,10 @@
             }
           ],
           "scale": {
+            "cooldownPeriod": 300,
             "maxReplicas": 3,
-            "minReplicas": 1
+            "minReplicas": 1,
+            "pollingInterval": 30
           }
         },
         "workloadProfileName": "Consumption"
