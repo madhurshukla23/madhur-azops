@@ -1,0 +1,494 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "apiVersion": "2025-11-01-preview",
+      "name": "pz6mcosmosdb/enterprise_memory/5dd21ea6-bb3b-49c9-9c36-b5815f970b5c-agent-definitions-v1",
+      "properties": {
+        "resource": {
+          "computedProperties": [],
+          "conflictResolutionPolicy": {
+            "conflictResolutionPath": "/_ts",
+            "mode": "LastWriterWins"
+          },
+          "defaultTtl": -1,
+          "id": "5dd21ea6-bb3b-49c9-9c36-b5815f970b5c-agent-definitions-v1",
+          "indexingPolicy": {
+            "automatic": true,
+            "compositeIndexes": [
+              [
+                {
+                  "order": "ascending",
+                  "path": "/info/created_at"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/info/created_at"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/info/updated_at"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/info/updated_at"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/object/definition/model"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/object/definition/model"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/object/description"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/object/description"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/object/agent_name"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/object/agent_name"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/object/latest_version/created_at"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/object/latest_version/created_at"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/object_type"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/object_type"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/object_type"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/agent_name"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/object_type"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/agent_name"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/object_type"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/info/deleted"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/info/created_at"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/object_type"
+                },
+                {
+                  "order": "descending",
+                  "path": "/info/deleted"
+                },
+                {
+                  "order": "descending",
+                  "path": "/info/created_at"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/object_type"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/info/deleted"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/latest_version/created_at"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/object_type"
+                },
+                {
+                  "order": "descending",
+                  "path": "/info/deleted"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/latest_version/created_at"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/object_type"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/info/deleted"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/agent_name"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/info/created_at"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/object/project_id"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/object_type"
+                },
+                {
+                  "order": "descending",
+                  "path": "/info/deleted"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/agent_name"
+                },
+                {
+                  "order": "descending",
+                  "path": "/info/created_at"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/partition_id"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/project_id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/partition_id"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/project_id"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/partition_id"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/object_type"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/partition_id"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/object_type"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/partition_id"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/deleted"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/partition_id"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/deleted"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/partition_id"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/object/agent_name"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/partition_id"
+                },
+                {
+                  "order": "descending",
+                  "path": "/object/agent_name"
+                }
+              ],
+              [
+                {
+                  "order": "ascending",
+                  "path": "/_ts"
+                },
+                {
+                  "order": "ascending",
+                  "path": "/id"
+                }
+              ],
+              [
+                {
+                  "order": "descending",
+                  "path": "/_ts"
+                },
+                {
+                  "order": "descending",
+                  "path": "/id"
+                }
+              ]
+            ],
+            "excludedPaths": [
+              {
+                "path": "/*"
+              },
+              {
+                "path": "/\"_etag\"/?"
+              }
+            ],
+            "fullTextIndexes": [],
+            "includedPaths": [
+              {
+                "path": "/partition_id/?"
+              },
+              {
+                "path": "/info/created_at/?"
+              },
+              {
+                "path": "/info/updated_at/?"
+              },
+              {
+                "path": "/info/deleted/?"
+              },
+              {
+                "path": "/object/project_id/?"
+              },
+              {
+                "path": "/object/object_type/?"
+              },
+              {
+                "path": "/object/agent_name/?"
+              },
+              {
+                "path": "/object/version/?"
+              },
+              {
+                "path": "/object/kind/?"
+              },
+              {
+                "path": "/object/latest_version/*"
+              }
+            ],
+            "indexingMode": "consistent"
+          },
+          "partitionKey": {
+            "kind": "Hash",
+            "paths": [
+              "/partition_id"
+            ]
+          },
+          "uniqueKeyPolicy": {
+            "uniqueKeys": []
+          }
+        }
+      },
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+    }
+  ],
+  "outputs": {}
+}
